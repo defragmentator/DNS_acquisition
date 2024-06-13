@@ -1,0 +1,6 @@
+data/*
+creds
+python/__pycache__/*.pyc
+python/creds
+python/config.ini
+python/*sql_append

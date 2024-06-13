@@ -1,0 +1,29 @@
+FILTER="walk( if type == \"object\" then with_entries( .key |= gsub( \"[.]\"; \"_\") ) else . end ) |
+ (._source.layers.dns.\"Additional records\" | [.[]?] | . as \$in |  reduce ($ADD_UNKNOWN_COLS\"dns_resp_name\",\"dns_resp_type\",\"dns_resp_class\",
+\"dns_resp_ttl\",\"dns_resp_len\",\"dns_a\",\"dns_aaaa\",\"dns_resp_edns0_version\",\"dns_resp_ext_rcode\",\"dns_resp_z\",\"dns_rr_udp_payload_size\",
+\"dns_rrsig_algorithm\",\"dns_rrsig_key_tag\",\"dns_rrsig_labels\",
+\"dns_rrsig_original_ttl\",\"dns_rrsig_signature\",\"dns_rrsig_signature_expiration\",\"dns_rrsig_signature_inception\",
+\"dns_rrsig_signers_name\",\"dns_rrsig_type_covered\", \"dns_srv_name\", \"dns_nsec3_algo\", \"dns_srv_port\", \"dns_srv_priority\", \"dns_srv_proto\", \"dns_srv_service\", \"dns_srv_target\", \"dns_srv_weight\", \"dns_nsec3_flags\", \"dns_nsec3_hash_length\", \"dns_nsec3_hash_value\", \"dns_nsec3_iterations\", \"dns_nsec3_salt_length\", \"dns_nsec3_salt_value\", \"dns_rp_mailbox\", \"dns_rp_txt_rr\", \"dns_tlsa_certificate_association_data\", \"dns_tlsa_certificate_usage\", \"dns_tlsa_matching_type\", \"dns_dname\", \"dns_tlsa_selector\" )
+ as \$k ({}; .[\$k] = [\$in[] | .[\$k]] ) | del(.dns_resp_z_tree) | del(.dns_opt) | del(.dns_nsec3_flags_tree) | { \"Additional_records\": .  } ) + (._source.layers.dns.\"Authoritative nameservers\" |
+[.[]?] | . as \$in |  reduce ($ADD_UNKNOWN_COLS\"dns_resp_name\",\"dns_resp_type\",\"dns_resp_class\",\"dns_resp_ttl\",\"dns_resp_len\",\"dns_ns\",
+\"dns_soa_expire_limit\",\"dns_soa_mininum_ttl\",\"dns_soa_mname\",\"dns_soa_refresh_interval\",\"dns_soa_retry_interval\",\"dns_soa_rname\",
+\"dns_soa_serial_number\",\"dns_nsec_next_domain_name\",\"dns_rrsig_algorithm\",\"dns_rrsig_key_tag\",\"dns_rrsig_labels\",
+\"dns_rrsig_original_ttl\",\"dns_rrsig_signature\",\"dns_rrsig_signature_expiration\",\"dns_rrsig_signature_inception\",
+\"dns_rrsig_signers_name\",\"dns_rrsig_type_covered\",\"dns_ds_algorithm\",\"dns_ds_digest\",\"dns_ds_digest_type\",\"dns_ds_key_id\",
+\"dns_nsec3_algo\",\"dns_nsec3_flags\",\"dns_nsec3_iterations\",\"dns_nsec3_salt_length\",\"dns_nsec3_salt_value\",\"dns_nsec3_hash_length\",
+\"dns_nsec3_hash_value\", \"dns_srv_name\") as \$k ({}; .[\$k] = [\$in[] | .[\$k]] ) | del(.dns_nsec3_flags_tree) | { \"Authoritative_nameservers\": .  } ) + (._source.layers.dns.\"Answers\" |
+ [.[]?] | . as \$in |  reduce($ADD_UNKNOWN_COLS\"dns_resp_name\",\"dns_resp_type\",\"dns_resp_class\",\"dns_resp_ttl\",\"dns_resp_len\",\"dns_a\",\"dns_aaaa\",
+\"dns_cname\",\"dns_ptr_domain_name\",\"dns_rrsig_algorithm\",\"dns_rrsig_key_tag\",\"dns_rrsig_labels\",\"dns_rrsig_original_ttl\",
+\"dns_rrsig_signature\",\"dns_rrsig_signature_expiration\",\"dns_rrsig_signature_inception\",\"dns_rrsig_signers_name\",
+\"dns_rrsig_type_covered\",\"dns_ds_algorithm\",\"dns_ds_digest\",\"dns_ds_digest_type\",\"dns_ds_key_id\",\"dns_txt\",\"dns_txt_length\",
+\"dns_mx_mail_exchange\",\"dns_mx_preference\",\"dns_dnskey_algorithm\",\"dns_dnskey_flags\",\"dns_dnskey_key_id\",\"dns_dnskey_protocol\",
+\"dns_dnskey_public_key\",\"dns_soa_expire_limit\",\"dns_soa_mininum_ttl\",\"dns_soa_mname\",\"dns_soa_refresh_interval\",\"dns_soa_retry_interval\",
+\"dns_soa_rname\",\"dns_soa_serial_number\",\"dns_ns\",\"dns_srv_name\",\"dns_srv_port\", \"dns_naptr_flags\", \"dns_srv_priority\", \"dns_srv_proto\", \"dns_srv_service\", \"dns_srv_target\", \"dns_srv_weight\", \"dns_data\", \"dns_naptr_flags_length\", \"dns_naptr_order\", \"dns_naptr_preference\", \"dns_naptr_regex\", \"dns_naptr_regex_length\", \"dns_naptr_replacement\", \"dns_naptr_replacement_length\", \"dns_naptr_service\", \"dns_naptr_service_length\", \"dns_spf\", \"dns_spf_length\", \"dns_dname\", \"dns_resp_edns0_version\", \"dns_resp_ext_rcode\", \"dns_resp_z\", \"dns_rr_udp_payload_size\" ) as \$k
+({}; .[\$k] = [\$in[] | .[\$k]] ) |del(.\"dns_dnskey_flags_tree\")| del(.\"_ws_expert\")| del(.\"dns_resp_z_tree\") | { \"Answers\": .  } )  + (._source.layers.dns.\"Queries\" |
+ [.[]?] | . as \$in |  reduce (add? | keys[]) as \$k ({}; .[\$k] = [\$in[] | .[\$k]] ) | { \"Queries\": .  } ) +  ( ._source.layers.frame |
+del(.\"frame_interface_id_tree\") ) + ( ._source.layers.dns | del(.\"Authoritative nameservers\") | del(.\"Additional records\")|
+del(.\"Answers\")|del(.\"Queries\")|del(.\"dns_flags_tree\")|del(.dns_id_tree)) + ( ._source.layers.dns.dns_flags_tree) + ( ._source.layers.udp | del(.udp_srcport_tree)|
+del(.udp_dstport_tree)|del(.Timestamps)|del(.udp_payload)) +
+( ._source.layers.ip | del(.ip_flags_tree) | del(.ip_dsfield_tree)) + ( ._source.layers.ip.ip_dsfield_tree) +
+( ._source.layers.ip.ip_flags_tree)"
+

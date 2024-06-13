@@ -1,0 +1,15 @@
+#!/bin/bash
+source check_params
+
+if [ ! -f creds ]; then
+    echo "brak pliku creds z loginem i hasle do bazy"
+    exit 0
+fi
+source creds
+
+
+query="INSERT INTO $DB_NAME.$DB_TABLE FORMAT JSONEachRow"
+
+cat $1 | clickhouse-client --input_format_import_nested_json true  -u $DB_USER --password "$DB_PASS" --query="$query"
+
+

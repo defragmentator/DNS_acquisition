@@ -1,0 +1,13 @@
+wymagany jq min 1.6
+binarka dla linuxa zawarta w folderze, bo dla debiana najnowszy pakiet to 1.5
+
+.ndjsonf - to ndjson przefiltrowany
+.ndjson - kazdy obiekt w osobnej linii
+
+
+Typy danych w kolumnach bazy trzeba dostosować do https://www.wireshark.org/docs/dfref/d/dns.html , https://www.wireshark.org/docs/dfref/f/frame.html i
+ sprawdzić czy w rzeczywistości tak jest.
+
+Wykomentowane pola w schema.sql dotyczą miejsc gdzie występowało podwójne zagnieżdżenie. Clickhouse 
+ Można tego nie obsługuje. Pola można przekopiować poziom wyżej lub pominąć tak jak jest teraz. 
+Na razie wydają sie mało isotne.

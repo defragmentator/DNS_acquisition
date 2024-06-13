@@ -1,0 +1,2921 @@
+[
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500003bfe1800007c114acffffed19dc0a86385dd510035002721e6d5520100000100000000000003656f640275720365647502706c0000010001", 0, 73, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500003bfe1800007c114acffffed19dc0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["003b", 16, 2, 0, 5],
+          "ip.id_raw": ["fe18", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7c", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["4acf", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffed19d", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffed19d", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffed19d", 26, 4, 0, 26],
+          "ip.host_raw": ["fffed19d", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["dd510035002721e6", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["dd51", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["dd51", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0027", 38, 2, 0, 5],
+          "udp.checksum_raw": ["21e6", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["d5520100000100000000000003656f640275720365647502706c0000010001", 42, 31, 0, 1],
+        "dns": {
+          "dns.id_raw": ["d552", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name_raw": ["03656f640275720365647502706c00", 54, 15, 0, 26],
+              "dns.qry.name.len_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.count.labels_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.qry.type_raw": ["0001", 69, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 71, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a0800450000930ed100003f1176bfc0a86385fffed19d0035dd51007f0ce6d5528580000100010002000203656f640275720365647502706c0000010001c00c0001000100000e100004c0a86331c0100002000100000e10000805646e73776dc010c0100002000100000e10000805646e737773c010c03b0001000100000e100004c0a86385c04f0001000100000e100004c0a863fb", 0, 161, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["450000930ed100003f1176bfc0a86385fffed19d", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0093", 16, 2, 0, 5],
+          "ip.id_raw": ["0ed1", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["76bf", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffed19d", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffed19d", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffed19d", 30, 4, 0, 26],
+          "ip.host_raw": ["fffed19d", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035dd51007f0ce6", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["dd51", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["dd51", 36, 2, 0, 5],
+          "udp.length_raw": ["007f", 38, 2, 0, 5],
+          "udp.checksum_raw": ["0ce6", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["d5528580000100010002000203656f640275720365647502706c0000010001c00c0001000100000e100004c0a86331c0100002000100000e10000805646e73776dc010c0100002000100000e10000805646e737773c010c03b0001000100000e100004c0a86385c04f0001000100000e100004c0a863fb", 42, 119, 0, 1],
+        "dns": {
+          "dns.id_raw": ["d552", 42, 2, 0, 5],
+          "dns.flags_raw": ["8580", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["1", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0001", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0002", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0002", 52, 2, 0, 5],
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name_raw": ["03656f640275720365647502706c00", 54, 15, 0, 26],
+              "dns.qry.name.len_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.count.labels_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.qry.type_raw": ["0001", 69, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 71, 2, 0, 5]
+            }
+          },
+          "Answers": {
+            "eod.xxx.com: type A, class IN, addr 1.2.3.49": {
+              "dns.resp.name_raw": ["c00c", 73, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 75, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 77, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 79, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 83, 2, 0, 7],
+              "dns.a_raw": ["c0a86331", 85, 4, 0, 32]
+            }
+          },
+          "Authoritative nameservers": {
+            "xxx.com: type NS, class IN, ns dnswm.xxx.com": {
+              "dns.resp.name_raw": ["c010", 89, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 91, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 93, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 95, 4, 0, 15],
+              "dns.resp.len_raw": ["0008", 99, 2, 0, 7],
+              "dns.ns_raw": ["05646e73776dc010", 101, 8, 0, 26]
+            },
+            "xxx.com: type NS, class IN, ns dnsws.xxx.com": {
+              "dns.resp.name_raw": ["c010", 109, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 111, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 113, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 115, 4, 0, 15],
+              "dns.resp.len_raw": ["0008", 119, 2, 0, 7],
+              "dns.ns_raw": ["05646e737773c010", 121, 8, 0, 26]
+            }
+          },
+          "Additional records": {
+            "dnswm.xxx.com: type A, class IN, addr 1.2.3.133": {
+              "dns.resp.name_raw": ["c03b", 129, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 131, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 133, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 135, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 139, 2, 0, 7],
+              "dns.a_raw": ["c0a86385", 141, 4, 0, 32]
+            },
+            "dnsws.xxx.com: type A, class IN, addr 1.2.3.251": {
+              "dns.resp.name_raw": ["c04f", 145, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 147, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 149, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 151, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 155, 2, 0, 7],
+              "dns.a_raw": ["c0a863fb", 157, 4, 0, 32]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500003bfe1900007c114acefffed19dc0a86385e61600350027a2784bfb0100000100000000000003656f640275720365647502706c0000010001", 0, 73, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500003bfe1900007c114acefffed19dc0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["003b", 16, 2, 0, 5],
+          "ip.id_raw": ["fe19", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7c", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["4ace", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffed19d", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffed19d", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffed19d", 26, 4, 0, 26],
+          "ip.host_raw": ["fffed19d", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["e61600350027a278", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["e616", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["e616", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0027", 38, 2, 0, 5],
+          "udp.checksum_raw": ["a278", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["4bfb0100000100000000000003656f640275720365647502706c0000010001", 42, 31, 0, 1],
+        "dns": {
+          "dns.id_raw": ["4bfb", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name_raw": ["03656f640275720365647502706c00", 54, 15, 0, 26],
+              "dns.qry.name.len_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.count.labels_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.qry.type_raw": ["0001", 69, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 71, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a0800450000930ed400003f1176bcc0a86385fffed19d0035e616007f8d784bfb8580000100010002000203656f640275720365647502706c0000010001c00c0001000100000e100004c0a86331c0100002000100000e10000805646e737773c010c0100002000100000e10000805646e73776dc010c04f0001000100000e100004c0a86385c03b0001000100000e100004c0a863fb", 0, 161, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["450000930ed400003f1176bcc0a86385fffed19d", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0093", 16, 2, 0, 5],
+          "ip.id_raw": ["0ed4", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["76bc", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffed19d", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffed19d", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffed19d", 30, 4, 0, 26],
+          "ip.host_raw": ["fffed19d", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035e616007f8d78", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["e616", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["e616", 36, 2, 0, 5],
+          "udp.length_raw": ["007f", 38, 2, 0, 5],
+          "udp.checksum_raw": ["8d78", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["4bfb8580000100010002000203656f640275720365647502706c0000010001c00c0001000100000e100004c0a86331c0100002000100000e10000805646e737773c010c0100002000100000e10000805646e73776dc010c04f0001000100000e100004c0a86385c03b0001000100000e100004c0a863fb", 42, 119, 0, 1],
+        "dns": {
+          "dns.id_raw": ["4bfb", 42, 2, 0, 5],
+          "dns.flags_raw": ["8580", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["1", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0001", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0002", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0002", 52, 2, 0, 5],
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name_raw": ["03656f640275720365647502706c00", 54, 15, 0, 26],
+              "dns.qry.name.len_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.count.labels_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.qry.type_raw": ["0001", 69, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 71, 2, 0, 5]
+            }
+          },
+          "Answers": {
+            "eod.xxx.com: type A, class IN, addr 1.2.3.49": {
+              "dns.resp.name_raw": ["c00c", 73, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 75, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 77, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 79, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 83, 2, 0, 7],
+              "dns.a_raw": ["c0a86331", 85, 4, 0, 32]
+            }
+          },
+          "Authoritative nameservers": {
+            "xxx.com: type NS, class IN, ns dnsws.xxx.com": {
+              "dns.resp.name_raw": ["c010", 89, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 91, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 93, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 95, 4, 0, 15],
+              "dns.resp.len_raw": ["0008", 99, 2, 0, 7],
+              "dns.ns_raw": ["05646e737773c010", 101, 8, 0, 26]
+            },
+            "xxx.com: type NS, class IN, ns dnswm.xxx.com": {
+              "dns.resp.name_raw": ["c010", 109, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 111, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 113, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 115, 4, 0, 15],
+              "dns.resp.len_raw": ["0008", 119, 2, 0, 7],
+              "dns.ns_raw": ["05646e73776dc010", 121, 8, 0, 26]
+            }
+          },
+          "Additional records": {
+            "dnswm.xxx.com: type A, class IN, addr 1.2.3.133": {
+              "dns.resp.name_raw": ["c04f", 129, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 131, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 133, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 135, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 139, 2, 0, 7],
+              "dns.a_raw": ["c0a86385", 141, 4, 0, 32]
+            },
+            "dnsws.xxx.com: type A, class IN, addr 1.2.3.251": {
+              "dns.resp.name_raw": ["c03b", 145, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 147, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 149, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 151, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 155, 2, 0, 7],
+              "dns.a_raw": ["c0a863fb", 157, 4, 0, 32]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500003bfe1a00007c114acdfffed19dc0a86385dcda0035002787c754e80100000100000000000003656f640275720365647502706c00001c0001", 0, 73, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500003bfe1a00007c114acdfffed19dc0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["003b", 16, 2, 0, 5],
+          "ip.id_raw": ["fe1a", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7c", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["4acd", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffed19d", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffed19d", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffed19d", 26, 4, 0, 26],
+          "ip.host_raw": ["fffed19d", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["dcda0035002787c7", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["dcda", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["dcda", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0027", 38, 2, 0, 5],
+          "udp.checksum_raw": ["87c7", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["54e80100000100000000000003656f640275720365647502706c00001c0001", 42, 31, 0, 1],
+        "dns": {
+          "dns.id_raw": ["54e8", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "eod.xxx.com: type AAAA, class IN": {
+              "dns.qry.name_raw": ["03656f640275720365647502706c00", 54, 15, 0, 26],
+              "dns.qry.name.len_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.count.labels_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.qry.type_raw": ["001c", 69, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 71, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500006c0edb00003f1176dcc0a86385fffed19d0035dcda0058ed9354e88580000100000001000003656f640275720365647502706c00001c0001c0100006000100000e10002505646e73776dc01006727465637a61c01078689750000004b00000038400093a8000000e10", 0, 122, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500006c0edb00003f1176dcc0a86385fffed19d", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["006c", 16, 2, 0, 5],
+          "ip.id_raw": ["0edb", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["76dc", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffed19d", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffed19d", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffed19d", 30, 4, 0, 26],
+          "ip.host_raw": ["fffed19d", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035dcda0058ed93", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["dcda", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["dcda", 36, 2, 0, 5],
+          "udp.length_raw": ["0058", 38, 2, 0, 5],
+          "udp.checksum_raw": ["ed93", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["54e88580000100000001000003656f640275720365647502706c00001c0001c0100006000100000e10002505646e73776dc01006727465637a61c01078689750000004b00000038400093a8000000e10", 42, 80, 0, 1],
+        "dns": {
+          "dns.id_raw": ["54e8", 42, 2, 0, 5],
+          "dns.flags_raw": ["8580", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["1", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0001", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "eod.xxx.com: type AAAA, class IN": {
+              "dns.qry.name_raw": ["03656f640275720365647502706c00", 54, 15, 0, 26],
+              "dns.qry.name.len_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.count.labels_raw": ["03656f64027572036564750270", 54, 13, 0, 5],
+              "dns.qry.type_raw": ["001c", 69, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 71, 2, 0, 5]
+            }
+          },
+          "Authoritative nameservers": {
+            "xxx.com: type SOA, class IN, mname dnswm.xxx.com": {
+              "dns.resp.name_raw": ["c010", 73, 2, 0, 26],
+              "dns.resp.type_raw": ["0006", 75, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 77, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e10", 79, 4, 0, 15],
+              "dns.resp.len_raw": ["0025", 83, 2, 0, 7],
+              "dns.soa.mname_raw": ["05646e73776dc010", 85, 8, 0, 26],
+              "dns.soa.rname_raw": ["06727465637a61c010", 93, 9, 0, 26],
+              "dns.soa.serial_number_raw": ["78689750", 102, 4, 0, 7],
+              "dns.soa.refresh_interval_raw": ["000004b0", 106, 4, 0, 7],
+              "dns.soa.retry_interval_raw": ["00000384", 110, 4, 0, 7],
+              "dns.soa.expire_limit_raw": ["00093a80", 114, 4, 0, 7],
+              "dns.soa.mininum_ttl_raw": ["00000e10", 118, 4, 0, 7]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a0800450000477fa200007b11a21dfffef9b9c0a86385c8d600350033fadfc145010000010000000000000374706311676f6f676c6573796e6469636174696f6e03636f6d0000010001", 0, 85, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["450000477fa200007b11a21dfffef9b9c0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0047", 16, 2, 0, 5],
+          "ip.id_raw": ["7fa2", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7b", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["a21d", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["c8d600350033fadf", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["c8d6", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["c8d6", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0033", 38, 2, 0, 5],
+          "udp.checksum_raw": ["fadf", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["c145010000010000000000000374706311676f6f676c6573796e6469636174696f6e03636f6d0000010001", 42, 43, 0, 1],
+        "dns": {
+          "dns.id_raw": ["c145", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "tpc.googlesyndication.com: type A, class IN": {
+              "dns.qry.name_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f6d00", 54, 27, 0, 26],
+              "dns.qry.name.len_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.count.labels_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.qry.type_raw": ["0001", 81, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 83, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500015629c000003f1132f1c0a86385fffef9b90035c8d60142dbf5c145818000010001000400080374706311676f6f676c6573796e6469636174696f6e03636f6d0000010001c00c000100010000000600048efa4b01c0100002000100000f82000d036e733206676f6f676c65c022c0100002000100000f820006036e7334c04bc0100002000100000f820006036e7331c04bc0100002000100000f820006036e7333c04bc0470001000100000edc0004d8ef220ac0720001000100000edc0004d8ef200ac0840001000100000edc0004d8ef240ac0600001000100000edc0004d8ef260ac047001c000100000edc00102001486048020034000000000000000ac072001c000100000edc00102001486048020032000000000000000ac084001c000100000edc00102001486048020036000000000000000ac060001c000100000edc00102001486048020038000000000000000a", 0, 356, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500015629c000003f1132f1c0a86385fffef9b9", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0156", 16, 2, 0, 5],
+          "ip.id_raw": ["29c0", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["32f1", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffef9b9", 30, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035c8d60142dbf5", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["c8d6", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["c8d6", 36, 2, 0, 5],
+          "udp.length_raw": ["0142", 38, 2, 0, 5],
+          "udp.checksum_raw": ["dbf5", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["c145818000010001000400080374706311676f6f676c6573796e6469636174696f6e03636f6d0000010001c00c000100010000000600048efa4b01c0100002000100000f82000d036e733206676f6f676c65c022c0100002000100000f820006036e7334c04bc0100002000100000f820006036e7331c04bc0100002000100000f820006036e7333c04bc0470001000100000edc0004d8ef220ac0720001000100000edc0004d8ef200ac0840001000100000edc0004d8ef240ac0600001000100000edc0004d8ef260ac047001c000100000edc00102001486048020034000000000000000ac072001c000100000edc00102001486048020032000000000000000ac084001c000100000edc00102001486048020036000000000000000ac060001c000100000edc00102001486048020038000000000000000a", 42, 314, 0, 1],
+        "dns": {
+          "dns.id_raw": ["c145", 42, 2, 0, 5],
+          "dns.flags_raw": ["8180", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["0", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0001", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0004", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0008", 52, 2, 0, 5],
+          "Queries": {
+            "tpc.googlesyndication.com: type A, class IN": {
+              "dns.qry.name_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f6d00", 54, 27, 0, 26],
+              "dns.qry.name.len_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.count.labels_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.qry.type_raw": ["0001", 81, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 83, 2, 0, 5]
+            }
+          },
+          "Answers": {
+            "tpc.googlesyndication.com: type A, class IN, addr 142.250.75.1": {
+              "dns.resp.name_raw": ["c00c", 85, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 87, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 89, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000006", 91, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 95, 2, 0, 7],
+              "dns.a_raw": ["8efa4b01", 97, 4, 0, 32]
+            }
+          },
+          "Authoritative nameservers": {
+            "googlesyndication.com: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name_raw": ["c010", 101, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 103, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 105, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 107, 4, 0, 15],
+              "dns.resp.len_raw": ["000d", 111, 2, 0, 7],
+              "dns.ns_raw": ["036e733206676f6f676c65c022", 113, 13, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name_raw": ["c010", 126, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 128, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 130, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 132, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 136, 2, 0, 7],
+              "dns.ns_raw": ["036e7334c04b", 138, 6, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name_raw": ["c010", 144, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 146, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 148, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 150, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 154, 2, 0, 7],
+              "dns.ns_raw": ["036e7331c04b", 156, 6, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name_raw": ["c010", 162, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 164, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 166, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 168, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 172, 2, 0, 7],
+              "dns.ns_raw": ["036e7333c04b", 174, 6, 0, 26]
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name_raw": ["c047", 180, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 182, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 184, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 186, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 190, 2, 0, 7],
+              "dns.a_raw": ["d8ef220a", 192, 4, 0, 32]
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name_raw": ["c072", 196, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 198, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 200, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 202, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 206, 2, 0, 7],
+              "dns.a_raw": ["d8ef200a", 208, 4, 0, 32]
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name_raw": ["c084", 212, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 214, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 216, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 218, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 222, 2, 0, 7],
+              "dns.a_raw": ["d8ef240a", 224, 4, 0, 32]
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name_raw": ["c060", 228, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 230, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 232, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 234, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 238, 2, 0, 7],
+              "dns.a_raw": ["d8ef260a", 240, 4, 0, 32]
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name_raw": ["c047", 244, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 246, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 248, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 250, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 254, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020034000000000000000a", 256, 16, 0, 33]
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name_raw": ["c072", 272, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 274, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 276, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 278, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 282, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020032000000000000000a", 284, 16, 0, 33]
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name_raw": ["c084", 300, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 302, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 304, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 306, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 310, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020036000000000000000a", 312, 16, 0, 33]
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name_raw": ["c060", 328, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 330, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 332, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 334, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 338, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020038000000000000000a", 340, 16, 0, 33]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a0800450000477fa300007b11a21cfffef9b9c0a86385ed380035003370922731010000010000000000000374706311676f6f676c6573796e6469636174696f6e03636f6d0000010001", 0, 85, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["450000477fa300007b11a21cfffef9b9c0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0047", 16, 2, 0, 5],
+          "ip.id_raw": ["7fa3", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7b", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["a21c", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["ed38003500337092", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["ed38", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["ed38", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0033", 38, 2, 0, 5],
+          "udp.checksum_raw": ["7092", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["2731010000010000000000000374706311676f6f676c6573796e6469636174696f6e03636f6d0000010001", 42, 43, 0, 1],
+        "dns": {
+          "dns.id_raw": ["2731", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "tpc.googlesyndication.com: type A, class IN": {
+              "dns.qry.name_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f6d00", 54, 27, 0, 26],
+              "dns.qry.name.len_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.count.labels_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.qry.type_raw": ["0001", 81, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 83, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500015629c300003f1132eec0a86385fffef9b90035ed3801424faa2731818000010001000400080374706311676f6f676c6573796e6469636174696f6e03636f6d0000010001c00c000100010000000600048efa4b01c0100002000100000f82000d036e733406676f6f676c65c022c0100002000100000f820006036e7333c04bc0100002000100000f820006036e7331c04bc0100002000100000f820006036e7332c04bc0840001000100000edc0004d8ef220ac0720001000100000edc0004d8ef200ac0600001000100000edc0004d8ef240ac0470001000100000edc0004d8ef260ac084001c000100000edc00102001486048020034000000000000000ac072001c000100000edc00102001486048020032000000000000000ac060001c000100000edc00102001486048020036000000000000000ac047001c000100000edc00102001486048020038000000000000000a", 0, 356, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500015629c300003f1132eec0a86385fffef9b9", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0156", 16, 2, 0, 5],
+          "ip.id_raw": ["29c3", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["32ee", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffef9b9", 30, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035ed3801424faa", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["ed38", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["ed38", 36, 2, 0, 5],
+          "udp.length_raw": ["0142", 38, 2, 0, 5],
+          "udp.checksum_raw": ["4faa", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["2731818000010001000400080374706311676f6f676c6573796e6469636174696f6e03636f6d0000010001c00c000100010000000600048efa4b01c0100002000100000f82000d036e733406676f6f676c65c022c0100002000100000f820006036e7333c04bc0100002000100000f820006036e7331c04bc0100002000100000f820006036e7332c04bc0840001000100000edc0004d8ef220ac0720001000100000edc0004d8ef200ac0600001000100000edc0004d8ef240ac0470001000100000edc0004d8ef260ac084001c000100000edc00102001486048020034000000000000000ac072001c000100000edc00102001486048020032000000000000000ac060001c000100000edc00102001486048020036000000000000000ac047001c000100000edc00102001486048020038000000000000000a", 42, 314, 0, 1],
+        "dns": {
+          "dns.id_raw": ["2731", 42, 2, 0, 5],
+          "dns.flags_raw": ["8180", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["0", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0001", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0004", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0008", 52, 2, 0, 5],
+          "Queries": {
+            "tpc.googlesyndication.com: type A, class IN": {
+              "dns.qry.name_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f6d00", 54, 27, 0, 26],
+              "dns.qry.name.len_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.count.labels_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.qry.type_raw": ["0001", 81, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 83, 2, 0, 5]
+            }
+          },
+          "Answers": {
+            "tpc.googlesyndication.com: type A, class IN, addr 142.250.75.1": {
+              "dns.resp.name_raw": ["c00c", 85, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 87, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 89, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000006", 91, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 95, 2, 0, 7],
+              "dns.a_raw": ["8efa4b01", 97, 4, 0, 32]
+            }
+          },
+          "Authoritative nameservers": {
+            "googlesyndication.com: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name_raw": ["c010", 101, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 103, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 105, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 107, 4, 0, 15],
+              "dns.resp.len_raw": ["000d", 111, 2, 0, 7],
+              "dns.ns_raw": ["036e733406676f6f676c65c022", 113, 13, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name_raw": ["c010", 126, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 128, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 130, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 132, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 136, 2, 0, 7],
+              "dns.ns_raw": ["036e7333c04b", 138, 6, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name_raw": ["c010", 144, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 146, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 148, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 150, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 154, 2, 0, 7],
+              "dns.ns_raw": ["036e7331c04b", 156, 6, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name_raw": ["c010", 162, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 164, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 166, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 168, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 172, 2, 0, 7],
+              "dns.ns_raw": ["036e7332c04b", 174, 6, 0, 26]
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name_raw": ["c084", 180, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 182, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 184, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 186, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 190, 2, 0, 7],
+              "dns.a_raw": ["d8ef220a", 192, 4, 0, 32]
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name_raw": ["c072", 196, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 198, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 200, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 202, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 206, 2, 0, 7],
+              "dns.a_raw": ["d8ef200a", 208, 4, 0, 32]
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name_raw": ["c060", 212, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 214, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 216, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 218, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 222, 2, 0, 7],
+              "dns.a_raw": ["d8ef240a", 224, 4, 0, 32]
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name_raw": ["c047", 228, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 230, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 232, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 234, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 238, 2, 0, 7],
+              "dns.a_raw": ["d8ef260a", 240, 4, 0, 32]
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name_raw": ["c084", 244, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 246, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 248, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 250, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 254, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020034000000000000000a", 256, 16, 0, 33]
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name_raw": ["c072", 272, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 274, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 276, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 278, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 282, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020032000000000000000a", 284, 16, 0, 33]
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name_raw": ["c060", 300, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 302, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 304, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 306, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 310, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020036000000000000000a", 312, 16, 0, 33]
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name_raw": ["c047", 328, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 330, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 332, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 334, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 338, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020038000000000000000a", 340, 16, 0, 33]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a0800450000477fa400007b11a21bfffef9b9c0a86385e2bd003500337102163c010000010000000000000374706311676f6f676c6573796e6469636174696f6e03636f6d00001c0001", 0, 85, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["450000477fa400007b11a21bfffef9b9c0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0047", 16, 2, 0, 5],
+          "ip.id_raw": ["7fa4", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7b", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["a21b", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["e2bd003500337102", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["e2bd", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["e2bd", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0033", 38, 2, 0, 5],
+          "udp.checksum_raw": ["7102", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["163c010000010000000000000374706311676f6f676c6573796e6469636174696f6e03636f6d00001c0001", 42, 43, 0, 1],
+        "dns": {
+          "dns.id_raw": ["163c", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "tpc.googlesyndication.com: type AAAA, class IN": {
+              "dns.qry.name_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f6d00", 54, 27, 0, 26],
+              "dns.qry.name.len_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.count.labels_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.qry.type_raw": ["001c", 81, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 83, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500016229c400003f1132e1c0a86385fffef9b90035e2bd014e4baf163c818000010001000400080374706311676f6f676c6573796e6469636174696f6e03636f6d00001c0001c00c001c00010000007300102a001450401b08010000000000002001c0100002000100000f82000d036e733206676f6f676c65c022c0100002000100000f820006036e7333c057c0100002000100000f820006036e7334c057c0100002000100000f820006036e7331c057c0530001000100000edc0004d8ef220ac0900001000100000edc0004d8ef200ac06c0001000100000edc0004d8ef240ac07e0001000100000edc0004d8ef260ac053001c000100000edc00102001486048020034000000000000000ac090001c000100000edc00102001486048020032000000000000000ac06c001c000100000edc00102001486048020036000000000000000ac07e001c000100000edc00102001486048020038000000000000000a", 0, 368, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500016229c400003f1132e1c0a86385fffef9b9", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0162", 16, 2, 0, 5],
+          "ip.id_raw": ["29c4", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["32e1", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffef9b9", 30, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035e2bd014e4baf", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["e2bd", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["e2bd", 36, 2, 0, 5],
+          "udp.length_raw": ["014e", 38, 2, 0, 5],
+          "udp.checksum_raw": ["4baf", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["163c818000010001000400080374706311676f6f676c6573796e6469636174696f6e03636f6d00001c0001c00c001c00010000007300102a001450401b08010000000000002001c0100002000100000f82000d036e733206676f6f676c65c022c0100002000100000f820006036e7333c057c0100002000100000f820006036e7334c057c0100002000100000f820006036e7331c057c0530001000100000edc0004d8ef220ac0900001000100000edc0004d8ef200ac06c0001000100000edc0004d8ef240ac07e0001000100000edc0004d8ef260ac053001c000100000edc00102001486048020034000000000000000ac090001c000100000edc00102001486048020032000000000000000ac06c001c000100000edc00102001486048020036000000000000000ac07e001c000100000edc00102001486048020038000000000000000a", 42, 326, 0, 1],
+        "dns": {
+          "dns.id_raw": ["163c", 42, 2, 0, 5],
+          "dns.flags_raw": ["8180", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["0", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0001", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0004", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0008", 52, 2, 0, 5],
+          "Queries": {
+            "tpc.googlesyndication.com: type AAAA, class IN": {
+              "dns.qry.name_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f6d00", 54, 27, 0, 26],
+              "dns.qry.name.len_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.count.labels_raw": ["0374706311676f6f676c6573796e6469636174696f6e03636f", 54, 25, 0, 5],
+              "dns.qry.type_raw": ["001c", 81, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 83, 2, 0, 5]
+            }
+          },
+          "Answers": {
+            "tpc.googlesyndication.com: type AAAA, class IN, addr 2a00:1450:401b:801::2001": {
+              "dns.resp.name_raw": ["c00c", 85, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 87, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 89, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000073", 91, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 95, 2, 0, 7],
+              "dns.aaaa_raw": ["2a001450401b08010000000000002001", 97, 16, 0, 33]
+            }
+          },
+          "Authoritative nameservers": {
+            "googlesyndication.com: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name_raw": ["c010", 113, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 115, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 117, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 119, 4, 0, 15],
+              "dns.resp.len_raw": ["000d", 123, 2, 0, 7],
+              "dns.ns_raw": ["036e733206676f6f676c65c022", 125, 13, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name_raw": ["c010", 138, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 140, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 142, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 144, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 148, 2, 0, 7],
+              "dns.ns_raw": ["036e7333c057", 150, 6, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name_raw": ["c010", 156, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 158, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 160, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 162, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 166, 2, 0, 7],
+              "dns.ns_raw": ["036e7334c057", 168, 6, 0, 26]
+            },
+            "googlesyndication.com: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name_raw": ["c010", 174, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 176, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 178, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000f82", 180, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 184, 2, 0, 7],
+              "dns.ns_raw": ["036e7331c057", 186, 6, 0, 26]
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name_raw": ["c053", 192, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 194, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 196, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 198, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 202, 2, 0, 7],
+              "dns.a_raw": ["d8ef220a", 204, 4, 0, 32]
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name_raw": ["c090", 208, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 210, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 212, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 214, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 218, 2, 0, 7],
+              "dns.a_raw": ["d8ef200a", 220, 4, 0, 32]
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name_raw": ["c06c", 224, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 226, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 228, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 230, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 234, 2, 0, 7],
+              "dns.a_raw": ["d8ef240a", 236, 4, 0, 32]
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name_raw": ["c07e", 240, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 242, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 244, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 246, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 250, 2, 0, 7],
+              "dns.a_raw": ["d8ef260a", 252, 4, 0, 32]
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name_raw": ["c053", 256, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 258, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 260, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 262, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 266, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020034000000000000000a", 268, 16, 0, 33]
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name_raw": ["c090", 284, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 286, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 288, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 290, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 294, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020032000000000000000a", 296, 16, 0, 33]
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name_raw": ["c06c", 312, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 314, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 316, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 318, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 322, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020036000000000000000a", 324, 16, 0, 33]
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name_raw": ["c07e", 340, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 342, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 344, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 346, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 350, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020038000000000000000a", 352, 16, 0, 33]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500004c7fa500007b11a215fffef9b9c0a86385de37003500388f4514e5010000010000000000000c73656375726570756261647301670b646f75626c65636c69636b036e65740000010001", 0, 90, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500004c7fa500007b11a215fffef9b9c0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["004c", 16, 2, 0, 5],
+          "ip.id_raw": ["7fa5", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7b", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["a215", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["de37003500388f45", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["de37", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["de37", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0038", 38, 2, 0, 5],
+          "udp.checksum_raw": ["8f45", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["14e5010000010000000000000c73656375726570756261647301670b646f75626c65636c69636b036e65740000010001", 42, 48, 0, 1],
+        "dns": {
+          "dns.id_raw": ["14e5", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "securepubads.g.doubleclick.net: type A, class IN": {
+              "dns.qry.name_raw": ["0c73656375726570756261647301670b646f75626c65636c69636b036e657400", 54, 32, 0, 26],
+              "dns.qry.name.len_raw": ["0c73656375726570756261647301670b646f75626c65636c69636b036e65", 54, 30, 0, 5],
+              "dns.count.labels_raw": ["0c73656375726570756261647301670b646f75626c65636c69636b036e65", 54, 30, 0, 5],
+              "dns.qry.type_raw": ["0001", 86, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 88, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500017829cf00003f1132c0c0a86385fffef9b90035de370164d45d14e5818000010002000400080c73656375726570756261647301670b646f75626c65636c69636b036e65740000010001c00c00050001000010ce000e09706172746e65726164016cc01bc03c00010001000000be0004d83ad0c2c01b0002000100000df90010036e733306676f6f676c6503636f6d00c01b0002000100000df90006036e7334c06ac01b0002000100000df90006036e7332c06ac01b0002000100000df90006036e7331c06ac0940001000100000edc0004d8ef220ac0a60001000100000edc0004d8ef200ac0660001000100000edc0004d8ef240ac0820001000100000edc0004d8ef260ac094001c000100000edc00102001486048020034000000000000000ac0a6001c000100000edc00102001486048020032000000000000000ac066001c000100000edc00102001486048020036000000000000000ac082001c000100000edc00102001486048020038000000000000000a", 0, 390, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500017829cf00003f1132c0c0a86385fffef9b9", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0178", 16, 2, 0, 5],
+          "ip.id_raw": ["29cf", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["32c0", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffef9b9", 30, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035de370164d45d", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["de37", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["de37", 36, 2, 0, 5],
+          "udp.length_raw": ["0164", 38, 2, 0, 5],
+          "udp.checksum_raw": ["d45d", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["14e5818000010002000400080c73656375726570756261647301670b646f75626c65636c69636b036e65740000010001c00c00050001000010ce000e09706172746e65726164016cc01bc03c00010001000000be0004d83ad0c2c01b0002000100000df90010036e733306676f6f676c6503636f6d00c01b0002000100000df90006036e7334c06ac01b0002000100000df90006036e7332c06ac01b0002000100000df90006036e7331c06ac0940001000100000edc0004d8ef220ac0a60001000100000edc0004d8ef200ac0660001000100000edc0004d8ef240ac0820001000100000edc0004d8ef260ac094001c000100000edc00102001486048020034000000000000000ac0a6001c000100000edc00102001486048020032000000000000000ac066001c000100000edc00102001486048020036000000000000000ac082001c000100000edc00102001486048020038000000000000000a", 42, 348, 0, 1],
+        "dns": {
+          "dns.id_raw": ["14e5", 42, 2, 0, 5],
+          "dns.flags_raw": ["8180", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["0", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0002", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0004", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0008", 52, 2, 0, 5],
+          "Queries": {
+            "securepubads.g.doubleclick.net: type A, class IN": {
+              "dns.qry.name_raw": ["0c73656375726570756261647301670b646f75626c65636c69636b036e657400", 54, 32, 0, 26],
+              "dns.qry.name.len_raw": ["0c73656375726570756261647301670b646f75626c65636c69636b036e65", 54, 30, 0, 5],
+              "dns.count.labels_raw": ["0c73656375726570756261647301670b646f75626c65636c69636b036e65", 54, 30, 0, 5],
+              "dns.qry.type_raw": ["0001", 86, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 88, 2, 0, 5]
+            }
+          },
+          "Answers": {
+            "securepubads.g.doubleclick.net: type CNAME, class IN, cname partnerad.l.doubleclick.net": {
+              "dns.resp.name_raw": ["c00c", 90, 2, 0, 26],
+              "dns.resp.type_raw": ["0005", 92, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 94, 2, 0, 5],
+              "dns.resp.ttl_raw": ["000010ce", 96, 4, 0, 15],
+              "dns.resp.len_raw": ["000e", 100, 2, 0, 7],
+              "dns.cname_raw": ["09706172746e65726164016cc01b", 102, 14, 0, 26]
+            },
+            "partnerad.l.doubleclick.net: type A, class IN, addr 216.58.208.194": {
+              "dns.resp.name_raw": ["c03c", 116, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 118, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 120, 2, 0, 5],
+              "dns.resp.ttl_raw": ["000000be", 122, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 126, 2, 0, 7],
+              "dns.a_raw": ["d83ad0c2", 128, 4, 0, 32]
+            }
+          },
+          "Authoritative nameservers": {
+            "doubleclick.net: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name_raw": ["c01b", 132, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 134, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 136, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000df9", 138, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 142, 2, 0, 7],
+              "dns.ns_raw": ["036e733306676f6f676c6503636f6d00", 144, 16, 0, 26]
+            },
+            "doubleclick.net: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name_raw": ["c01b", 160, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 162, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 164, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000df9", 166, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 170, 2, 0, 7],
+              "dns.ns_raw": ["036e7334c06a", 172, 6, 0, 26]
+            },
+            "doubleclick.net: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name_raw": ["c01b", 178, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 180, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 182, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000df9", 184, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 188, 2, 0, 7],
+              "dns.ns_raw": ["036e7332c06a", 190, 6, 0, 26]
+            },
+            "doubleclick.net: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name_raw": ["c01b", 196, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 198, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 200, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000df9", 202, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 206, 2, 0, 7],
+              "dns.ns_raw": ["036e7331c06a", 208, 6, 0, 26]
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name_raw": ["c094", 214, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 216, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 218, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 220, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 224, 2, 0, 7],
+              "dns.a_raw": ["d8ef220a", 226, 4, 0, 32]
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name_raw": ["c0a6", 230, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 232, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 234, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 236, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 240, 2, 0, 7],
+              "dns.a_raw": ["d8ef200a", 242, 4, 0, 32]
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name_raw": ["c066", 246, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 248, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 250, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 252, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 256, 2, 0, 7],
+              "dns.a_raw": ["d8ef240a", 258, 4, 0, 32]
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name_raw": ["c082", 262, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 264, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 266, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 268, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 272, 2, 0, 7],
+              "dns.a_raw": ["d8ef260a", 274, 4, 0, 32]
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name_raw": ["c094", 278, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 280, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 282, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 284, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 288, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020034000000000000000a", 290, 16, 0, 33]
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name_raw": ["c0a6", 306, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 308, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 310, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 312, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 316, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020032000000000000000a", 318, 16, 0, 33]
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name_raw": ["c066", 334, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 336, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 338, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 340, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 344, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020036000000000000000a", 346, 16, 0, 33]
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name_raw": ["c082", 362, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 364, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 366, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 368, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 372, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020038000000000000000a", 374, 16, 0, 33]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a0800450000497fa600007b11a217fffef9b9c0a86385c072003500359aa2605e0100000100000000000009706172746e65726164016c0b646f75626c65636c69636b036e65740000010001", 0, 87, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["450000497fa600007b11a217fffef9b9c0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0049", 16, 2, 0, 5],
+          "ip.id_raw": ["7fa6", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7b", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["a217", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["c072003500359aa2", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["c072", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["c072", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0035", 38, 2, 0, 5],
+          "udp.checksum_raw": ["9aa2", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["605e0100000100000000000009706172746e65726164016c0b646f75626c65636c69636b036e65740000010001", 42, 45, 0, 1],
+        "dns": {
+          "dns.id_raw": ["605e", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "partnerad.l.doubleclick.net: type A, class IN": {
+              "dns.qry.name_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e657400", 54, 29, 0, 26],
+              "dns.qry.name.len_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e65", 54, 27, 0, 5],
+              "dns.count.labels_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e65", 54, 27, 0, 5],
+              "dns.qry.type_raw": ["0001", 83, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 85, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500015b29d200003f1132dac0a86385fffef9b90035c07201472ff3605e8180000100010004000809706172746e65726164016c0b646f75626c65636c69636b036e65740000010001c00c00010001000000be0004d83ad0c2c0180002000100000df90010036e733306676f6f676c6503636f6d00c0180002000100000df90006036e7331c04dc0180002000100000df90006036e7334c04dc0180002000100000df90006036e7332c04dc0890001000100000edc0004d8ef220ac0650001000100000edc0004d8ef200ac0490001000100000edc0004d8ef240ac0770001000100000edc0004d8ef260ac089001c000100000edc00102001486048020034000000000000000ac065001c000100000edc00102001486048020032000000000000000ac049001c000100000edc00102001486048020036000000000000000ac077001c000100000edc00102001486048020038000000000000000a", 0, 361, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500015b29d200003f1132dac0a86385fffef9b9", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["015b", 16, 2, 0, 5],
+          "ip.id_raw": ["29d2", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["32da", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffef9b9", 30, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035c07201472ff3", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["c072", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["c072", 36, 2, 0, 5],
+          "udp.length_raw": ["0147", 38, 2, 0, 5],
+          "udp.checksum_raw": ["2ff3", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["605e8180000100010004000809706172746e65726164016c0b646f75626c65636c69636b036e65740000010001c00c00010001000000be0004d83ad0c2c0180002000100000df90010036e733306676f6f676c6503636f6d00c0180002000100000df90006036e7331c04dc0180002000100000df90006036e7334c04dc0180002000100000df90006036e7332c04dc0890001000100000edc0004d8ef220ac0650001000100000edc0004d8ef200ac0490001000100000edc0004d8ef240ac0770001000100000edc0004d8ef260ac089001c000100000edc00102001486048020034000000000000000ac065001c000100000edc00102001486048020032000000000000000ac049001c000100000edc00102001486048020036000000000000000ac077001c000100000edc00102001486048020038000000000000000a", 42, 319, 0, 1],
+        "dns": {
+          "dns.id_raw": ["605e", 42, 2, 0, 5],
+          "dns.flags_raw": ["8180", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["0", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0001", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0004", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0008", 52, 2, 0, 5],
+          "Queries": {
+            "partnerad.l.doubleclick.net: type A, class IN": {
+              "dns.qry.name_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e657400", 54, 29, 0, 26],
+              "dns.qry.name.len_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e65", 54, 27, 0, 5],
+              "dns.count.labels_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e65", 54, 27, 0, 5],
+              "dns.qry.type_raw": ["0001", 83, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 85, 2, 0, 5]
+            }
+          },
+          "Answers": {
+            "partnerad.l.doubleclick.net: type A, class IN, addr 216.58.208.194": {
+              "dns.resp.name_raw": ["c00c", 87, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 89, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 91, 2, 0, 5],
+              "dns.resp.ttl_raw": ["000000be", 93, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 97, 2, 0, 7],
+              "dns.a_raw": ["d83ad0c2", 99, 4, 0, 32]
+            }
+          },
+          "Authoritative nameservers": {
+            "doubleclick.net: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name_raw": ["c018", 103, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 105, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 107, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000df9", 109, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 113, 2, 0, 7],
+              "dns.ns_raw": ["036e733306676f6f676c6503636f6d00", 115, 16, 0, 26]
+            },
+            "doubleclick.net: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name_raw": ["c018", 131, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 133, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 135, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000df9", 137, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 141, 2, 0, 7],
+              "dns.ns_raw": ["036e7331c04d", 143, 6, 0, 26]
+            },
+            "doubleclick.net: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name_raw": ["c018", 149, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 151, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 153, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000df9", 155, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 159, 2, 0, 7],
+              "dns.ns_raw": ["036e7334c04d", 161, 6, 0, 26]
+            },
+            "doubleclick.net: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name_raw": ["c018", 167, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 169, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 171, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000df9", 173, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 177, 2, 0, 7],
+              "dns.ns_raw": ["036e7332c04d", 179, 6, 0, 26]
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name_raw": ["c089", 185, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 187, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 189, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 191, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 195, 2, 0, 7],
+              "dns.a_raw": ["d8ef220a", 197, 4, 0, 32]
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name_raw": ["c065", 201, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 203, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 205, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 207, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 211, 2, 0, 7],
+              "dns.a_raw": ["d8ef200a", 213, 4, 0, 32]
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name_raw": ["c049", 217, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 219, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 221, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 223, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 227, 2, 0, 7],
+              "dns.a_raw": ["d8ef240a", 229, 4, 0, 32]
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name_raw": ["c077", 233, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 235, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 237, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 239, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 243, 2, 0, 7],
+              "dns.a_raw": ["d8ef260a", 245, 4, 0, 32]
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name_raw": ["c089", 249, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 251, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 253, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 255, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 259, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020034000000000000000a", 261, 16, 0, 33]
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name_raw": ["c065", 277, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 279, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 281, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 283, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 287, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020032000000000000000a", 289, 16, 0, 33]
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name_raw": ["c049", 305, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 307, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 309, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 311, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 315, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020036000000000000000a", 317, 16, 0, 33]
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name_raw": ["c077", 333, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 335, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 337, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 339, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 343, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020038000000000000000a", 345, 16, 0, 33]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a0800450000497fa700007b11a216fffef9b9c0a86385c52d00350035615079f50100000100000000000009706172746e65726164016c0b646f75626c65636c69636b036e657400001c0001", 0, 87, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["450000497fa700007b11a216fffef9b9c0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0049", 16, 2, 0, 5],
+          "ip.id_raw": ["7fa7", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7b", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["a216", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 26, 4, 0, 32],
+          "ip.src_host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["c52d003500356150", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["c52d", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["c52d", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0035", 38, 2, 0, 5],
+          "udp.checksum_raw": ["6150", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["79f50100000100000000000009706172746e65726164016c0b646f75626c65636c69636b036e657400001c0001", 42, 45, 0, 1],
+        "dns": {
+          "dns.id_raw": ["79f5", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "partnerad.l.doubleclick.net: type AAAA, class IN": {
+              "dns.qry.name_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e657400", 54, 29, 0, 26],
+              "dns.qry.name.len_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e65", 54, 27, 0, 5],
+              "dns.count.labels_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e65", 54, 27, 0, 5],
+              "dns.qry.type_raw": ["001c", 83, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 85, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a08004500008529d300003f1133afc0a86385fffef9b90035c52d0071dcd379f58180000100000001000009706172746e65726164016c0b646f75626c65636c69636b036e657400001c0001c01600060001000000290030036e733106676f6f676c6503636f6d0009646e732d61646d696ec03d14a3e2f50000038400000384000007080000003c", 0, 147, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["4500008529d300003f1133afc0a86385fffef9b9", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0085", 16, 2, 0, 5],
+          "ip.id_raw": ["29d3", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["33af", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.addr_raw": ["fffef9b9", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["fffef9b9", 30, 4, 0, 26],
+          "ip.host_raw": ["fffef9b9", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035c52d0071dcd3", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["c52d", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["c52d", 36, 2, 0, 5],
+          "udp.length_raw": ["0071", 38, 2, 0, 5],
+          "udp.checksum_raw": ["dcd3", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["79f58180000100000001000009706172746e65726164016c0b646f75626c65636c69636b036e657400001c0001c01600060001000000290030036e733106676f6f676c6503636f6d0009646e732d61646d696ec03d14a3e2f50000038400000384000007080000003c", 42, 105, 0, 1],
+        "dns": {
+          "dns.id_raw": ["79f5", 42, 2, 0, 5],
+          "dns.flags_raw": ["8180", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["0", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0001", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "partnerad.l.doubleclick.net: type AAAA, class IN": {
+              "dns.qry.name_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e657400", 54, 29, 0, 26],
+              "dns.qry.name.len_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e65", 54, 27, 0, 5],
+              "dns.count.labels_raw": ["09706172746e65726164016c0b646f75626c65636c69636b036e65", 54, 27, 0, 5],
+              "dns.qry.type_raw": ["001c", 83, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 85, 2, 0, 5]
+            }
+          },
+          "Authoritative nameservers": {
+            "l.doubleclick.net: type SOA, class IN, mname ns1.google.com": {
+              "dns.resp.name_raw": ["c016", 87, 2, 0, 26],
+              "dns.resp.type_raw": ["0006", 89, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 91, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000029", 93, 4, 0, 15],
+              "dns.resp.len_raw": ["0030", 97, 2, 0, 7],
+              "dns.soa.mname_raw": ["036e733106676f6f676c6503636f6d00", 99, 16, 0, 26],
+              "dns.soa.rname_raw": ["09646e732d61646d696ec03d", 115, 12, 0, 26],
+              "dns.soa.serial_number_raw": ["14a3e2f5", 127, 4, 0, 7],
+              "dns.soa.refresh_interval_raw": ["00000384", 131, 4, 0, 7],
+              "dns.soa.retry_interval_raw": ["00000384", 135, 4, 0, 7],
+              "dns.soa.expire_limit_raw": ["00000708", 139, 4, 0, 7],
+              "dns.soa.mininum_ttl_raw": ["0000003c", 143, 4, 0, 7]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a080045000047edf900007c1126f1ffff058ec0a86385c1b300350033b0d8fbce01000001000000000000036c683511676f6f676c6575736572636f6e74656e7403636f6d0000010001", 0, 85, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["45000047edf900007c1126f1ffff058ec0a86385", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0047", 16, 2, 0, 5],
+          "ip.id_raw": ["edf9", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["7c", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["26f1", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["ffff058e", 26, 4, 0, 32],
+          "ip.addr_raw": ["ffff058e", 26, 4, 0, 32],
+          "ip.src_host_raw": ["ffff058e", 26, 4, 0, 26],
+          "ip.host_raw": ["ffff058e", 26, 4, 0, 26],
+          "ip.dst_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["c0a86385", 30, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 30, 4, 0, 26]
+        },
+        "udp_raw": ["c1b300350033b0d8", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["c1b3", 34, 2, 0, 5],
+          "udp.dstport_raw": ["0035", 36, 2, 0, 5],
+          "udp.port_raw": ["c1b3", 34, 2, 0, 5],
+          "udp.port_raw": ["0035", 36, 2, 0, 5],
+          "udp.length_raw": ["0033", 38, 2, 0, 5],
+          "udp.checksum_raw": ["b0d8", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["fbce01000001000000000000036c683511676f6f676c6575736572636f6e74656e7403636f6d0000010001", 42, 43, 0, 1],
+        "dns": {
+          "dns.id_raw": ["fbce", 42, 2, 0, 5],
+          "dns.flags_raw": ["0100", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["0", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0000", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0000", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0000", 52, 2, 0, 5],
+          "Queries": {
+            "lh5.googleusercontent.com: type A, class IN": {
+              "dns.qry.name_raw": ["036c683511676f6f676c6575736572636f6e74656e7403636f6d00", 54, 27, 0, 26],
+              "dns.qry.name.len_raw": ["036c683511676f6f676c6575736572636f6e74656e7403636f", 54, 25, 0, 5],
+              "dns.count.labels_raw": ["036c683511676f6f676c6575736572636f6e74656e7403636f", 54, 25, 0, 5],
+              "dns.qry.type_raw": ["0001", 81, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 83, 2, 0, 5]
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame_raw": ["beb4087fec3abeb4087fec3a080045000173766200003f11da5cc0a86385ffff058e0035c1b3015f0810fbce81800001000200040008036c683511676f6f676c6575736572636f6e74656e7403636f6d0000010001c00c000500010000208900110c676f6f676c65686f73746564016cc010c03700010001000000fd0004acd914c1c0100002000100000e1c000d036e733206676f6f676c65c022c0100002000100000e1c0006036e7333c068c0100002000100000e1c0006036e7331c068c0100002000100000e1c0006036e7334c068c07d0001000100000edc0004d8ef240ac0640001000100000edc0004d8ef220ac0a10001000100000edc0004d8ef260ac08f0001000100000edc0004d8ef200ac07d001c000100000edc00102001486048020036000000000000000ac064001c000100000edc00102001486048020034000000000000000ac0a1001c000100000edc00102001486048020038000000000000000ac08f001c000100000edc00102001486048020032000000000000000a", 0, 385, 0, 1],
+        "frame": {
+          "frame.interface_id_raw": ["", 0, 0, 0, 7],
+          "frame.interface_id_tree": {
+            "frame.interface_name_raw": ["", 0, 0, 0, 26]
+          },
+          "frame.encap_type_raw": ["", 0, 0, 0, 13],
+          "frame.time_raw": ["", 0, 0, 0, 24],
+          "frame.offset_shift_raw": ["", 0, 0, 0, 25],
+          "frame.time_epoch_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_raw": ["", 0, 0, 0, 25],
+          "frame.time_delta_displayed_raw": ["", 0, 0, 0, 25],
+          "frame.time_relative_raw": ["", 0, 0, 0, 25],
+          "frame.number_raw": ["", 0, 0, 0, 7],
+          "frame.len_raw": ["", 0, 0, 0, 7],
+          "frame.cap_len_raw": ["", 0, 0, 0, 7],
+          "frame.marked_raw": ["", 0, 0, 0, 2],
+          "frame.ignored_raw": ["", 0, 0, 0, 2],
+          "frame.protocols_raw": ["", 0, 0, 0, 26]
+        },
+        "eth_raw": ["beb4087fec3abeb4087fec3a0800", 0, 14, 0, 1],
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip_raw": ["45000173766200003f11da5cc0a86385ffff058e", 14, 20, 0, 1],
+        "ip": {
+          "ip.version_raw": ["4", 14, 1, 240, 4],
+          "ip.hdr_len_raw": ["45", 14, 1, 0, 4],
+          "ip.dsfield_raw": ["00", 15, 1, 0, 4],
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp_raw": ["0", 15, 1, 252, 4],
+            "ip.dsfield.ecn_raw": ["0", 15, 1, 3, 4]
+          },
+          "ip.len_raw": ["0173", 16, 2, 0, 5],
+          "ip.id_raw": ["7662", 18, 2, 0, 5],
+          "ip.flags_raw": ["0000", 20, 2, 0, 5],
+          "ip.flags_tree": {
+            "ip.flags.rb_raw": ["0", 20, 2, 32768, 2],
+            "ip.flags.df_raw": ["0", 20, 2, 16384, 2],
+            "ip.flags.mf_raw": ["0", 20, 2, 8192, 2],
+            "ip.frag_offset_raw": ["0", 20, 2, 8191, 5]
+          },
+          "ip.ttl_raw": ["3f", 22, 1, 0, 4],
+          "ip.proto_raw": ["11", 23, 1, 0, 4],
+          "ip.checksum_raw": ["da5c", 24, 2, 0, 5],
+          "ip.checksum.status_raw": ["", 24, 0, 0, 4],
+          "ip.src_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.addr_raw": ["c0a86385", 26, 4, 0, 32],
+          "ip.src_host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.host_raw": ["c0a86385", 26, 4, 0, 26],
+          "ip.dst_raw": ["ffff058e", 30, 4, 0, 32],
+          "ip.addr_raw": ["ffff058e", 30, 4, 0, 32],
+          "ip.dst_host_raw": ["ffff058e", 30, 4, 0, 26],
+          "ip.host_raw": ["ffff058e", 30, 4, 0, 26]
+        },
+        "udp_raw": ["0035c1b3015f0810", 34, 8, 0, 1],
+        "udp": {
+          "udp.srcport_raw": ["0035", 34, 2, 0, 5],
+          "udp.dstport_raw": ["c1b3", 36, 2, 0, 5],
+          "udp.port_raw": ["0035", 34, 2, 0, 5],
+          "udp.port_raw": ["c1b3", 36, 2, 0, 5],
+          "udp.length_raw": ["015f", 38, 2, 0, 5],
+          "udp.checksum_raw": ["0810", 40, 2, 0, 5],
+          "udp.checksum.status_raw": ["", 40, 0, 0, 4],
+          "udp.stream_raw": ["", 42, 0, 0, 7]
+        },
+        "dns_raw": ["fbce81800001000200040008036c683511676f6f676c6575736572636f6e74656e7403636f6d0000010001c00c000500010000208900110c676f6f676c65686f73746564016cc010c03700010001000000fd0004acd914c1c0100002000100000e1c000d036e733206676f6f676c65c022c0100002000100000e1c0006036e7333c068c0100002000100000e1c0006036e7331c068c0100002000100000e1c0006036e7334c068c07d0001000100000edc0004d8ef240ac0640001000100000edc0004d8ef220ac0a10001000100000edc0004d8ef260ac08f0001000100000edc0004d8ef200ac07d001c000100000edc00102001486048020036000000000000000ac064001c000100000edc00102001486048020034000000000000000ac0a1001c000100000edc00102001486048020038000000000000000ac08f001c000100000edc00102001486048020032000000000000000a", 42, 343, 0, 1],
+        "dns": {
+          "dns.id_raw": ["fbce", 42, 2, 0, 5],
+          "dns.flags_raw": ["8180", 44, 2, 0, 5],
+          "dns.flags_tree": {
+            "dns.flags.response_raw": ["1", 44, 2, 32768, 2],
+            "dns.flags.opcode_raw": ["0", 44, 2, 30720, 5],
+            "dns.flags.authoritative_raw": ["0", 44, 2, 1024, 2],
+            "dns.flags.truncated_raw": ["0", 44, 2, 512, 2],
+            "dns.flags.recdesired_raw": ["1", 44, 2, 256, 2],
+            "dns.flags.recavail_raw": ["1", 44, 2, 128, 2],
+            "dns.flags.z_raw": ["0", 44, 2, 64, 2],
+            "dns.flags.authenticated_raw": ["0", 44, 2, 32, 2],
+            "dns.flags.checkdisable_raw": ["0", 44, 2, 16, 2],
+            "dns.flags.rcode_raw": ["0", 44, 2, 15, 5]
+          },
+          "dns.count.queries_raw": ["0001", 46, 2, 0, 5],
+          "dns.count.answers_raw": ["0002", 48, 2, 0, 5],
+          "dns.count.auth_rr_raw": ["0004", 50, 2, 0, 5],
+          "dns.count.add_rr_raw": ["0008", 52, 2, 0, 5],
+          "Queries": {
+            "lh5.googleusercontent.com: type A, class IN": {
+              "dns.qry.name_raw": ["036c683511676f6f676c6575736572636f6e74656e7403636f6d00", 54, 27, 0, 26],
+              "dns.qry.name.len_raw": ["036c683511676f6f676c6575736572636f6e74656e7403636f", 54, 25, 0, 5],
+              "dns.count.labels_raw": ["036c683511676f6f676c6575736572636f6e74656e7403636f", 54, 25, 0, 5],
+              "dns.qry.type_raw": ["0001", 81, 2, 0, 5],
+              "dns.qry.class_raw": ["0001", 83, 2, 0, 5]
+            }
+          },
+          "Answers": {
+            "lh5.googleusercontent.com: type CNAME, class IN, cname googlehosted.l.googleusercontent.com": {
+              "dns.resp.name_raw": ["c00c", 85, 2, 0, 26],
+              "dns.resp.type_raw": ["0005", 87, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 89, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00002089", 91, 4, 0, 15],
+              "dns.resp.len_raw": ["0011", 95, 2, 0, 7],
+              "dns.cname_raw": ["0c676f6f676c65686f73746564016cc010", 97, 17, 0, 26]
+            },
+            "googlehosted.l.googleusercontent.com: type A, class IN, addr 172.217.20.193": {
+              "dns.resp.name_raw": ["c037", 114, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 116, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 118, 2, 0, 5],
+              "dns.resp.ttl_raw": ["000000fd", 120, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 124, 2, 0, 7],
+              "dns.a_raw": ["acd914c1", 126, 4, 0, 32]
+            }
+          },
+          "Authoritative nameservers": {
+            "googleusercontent.com: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name_raw": ["c010", 130, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 132, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 134, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e1c", 136, 4, 0, 15],
+              "dns.resp.len_raw": ["000d", 140, 2, 0, 7],
+              "dns.ns_raw": ["036e733206676f6f676c65c022", 142, 13, 0, 26]
+            },
+            "googleusercontent.com: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name_raw": ["c010", 155, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 157, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 159, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e1c", 161, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 165, 2, 0, 7],
+              "dns.ns_raw": ["036e7333c068", 167, 6, 0, 26]
+            },
+            "googleusercontent.com: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name_raw": ["c010", 173, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 175, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 177, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e1c", 179, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 183, 2, 0, 7],
+              "dns.ns_raw": ["036e7331c068", 185, 6, 0, 26]
+            },
+            "googleusercontent.com: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name_raw": ["c010", 191, 2, 0, 26],
+              "dns.resp.type_raw": ["0002", 193, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 195, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000e1c", 197, 4, 0, 15],
+              "dns.resp.len_raw": ["0006", 201, 2, 0, 7],
+              "dns.ns_raw": ["036e7334c068", 203, 6, 0, 26]
+            }
+          },
+          "Additional records": {
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name_raw": ["c07d", 209, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 211, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 213, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 215, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 219, 2, 0, 7],
+              "dns.a_raw": ["d8ef240a", 221, 4, 0, 32]
+            },
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name_raw": ["c064", 225, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 227, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 229, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 231, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 235, 2, 0, 7],
+              "dns.a_raw": ["d8ef220a", 237, 4, 0, 32]
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name_raw": ["c0a1", 241, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 243, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 245, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 247, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 251, 2, 0, 7],
+              "dns.a_raw": ["d8ef260a", 253, 4, 0, 32]
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name_raw": ["c08f", 257, 2, 0, 26],
+              "dns.resp.type_raw": ["0001", 259, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 261, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 263, 4, 0, 15],
+              "dns.resp.len_raw": ["0004", 267, 2, 0, 7],
+              "dns.a_raw": ["d8ef200a", 269, 4, 0, 32]
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name_raw": ["c07d", 273, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 275, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 277, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 279, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 283, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020036000000000000000a", 285, 16, 0, 33]
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name_raw": ["c064", 301, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 303, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 305, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 307, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 311, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020034000000000000000a", 313, 16, 0, 33]
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name_raw": ["c0a1", 329, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 331, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 333, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 335, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 339, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020038000000000000000a", 341, 16, 0, 33]
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name_raw": ["c08f", 357, 2, 0, 26],
+              "dns.resp.type_raw": ["001c", 359, 2, 0, 5],
+              "dns.resp.class_raw": ["0001", 361, 2, 0, 5],
+              "dns.resp.ttl_raw": ["00000edc", 363, 4, 0, 15],
+              "dns.resp.len_raw": ["0010", 367, 2, 0, 7],
+              "dns.aaaa_raw": ["2001486048020032000000000000000a", 369, 16, 0, 33]
+            }
+          },
+          "dns.response_to_raw": ["", 42, 0, 0, 35],
+          "dns.time_raw": ["", 42, 0, 0, 25]
+        }
+      }
+    }
+  }
+
+]

@@ -1,0 +1,2820 @@
+[
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.460488018 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.460488018",
+          "frame.time_delta": "0.000000000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "0.000000000",
+          "frame.number": "1",
+          "frame.len": "73",
+          "frame.cap_len": "73",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "59",
+          "ip.id": "0x0000fe18",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "124",
+          "ip.proto": "17",
+          "ip.checksum": "0x00004acf",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.209.157",
+          "ip.addr": "255.254.209.157",
+          "ip.src_host": "255.254.209.157",
+          "ip.host": "255.254.209.157",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "56657",
+          "udp.dstport": "53",
+          "udp.port": "56657",
+          "udp.port": "53",
+          "udp.length": "39",
+          "udp.checksum": "0x000021e6",
+          "udp.checksum.status": "2",
+          "udp.stream": "0"
+        },
+        "dns": {
+          "dns.id": "0x0000d552",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name": "eod.xxx.com",
+              "dns.qry.name.len": "13",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.460648119 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.460648119",
+          "frame.time_delta": "0.000160101",
+          "frame.time_delta_displayed": "0.000160101",
+          "frame.time_relative": "0.000160101",
+          "frame.number": "2",
+          "frame.len": "161",
+          "frame.cap_len": "161",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "147",
+          "ip.id": "0x00000ed1",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000076bf",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.209.157",
+          "ip.addr": "255.254.209.157",
+          "ip.dst_host": "255.254.209.157",
+          "ip.host": "255.254.209.157"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "56657",
+          "udp.port": "53",
+          "udp.port": "56657",
+          "udp.length": "127",
+          "udp.checksum": "0x00000ce6",
+          "udp.checksum.status": "2",
+          "udp.stream": "0"
+        },
+        "dns": {
+          "dns.id": "0x0000d552",
+          "dns.flags": "0x00008580",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "1",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "1",
+          "dns.count.auth_rr": "2",
+          "dns.count.add_rr": "2",
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name": "eod.xxx.com",
+              "dns.qry.name.len": "13",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "eod.xxx.com: type A, class IN, addr 1.2.3.49": {
+              "dns.resp.name": "eod.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.49"
+            }
+          },
+          "Authoritative nameservers": {
+            "xxx.com: type NS, class IN, ns dnswm.xxx.com": {
+              "dns.resp.name": "xxx.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "8",
+              "dns.ns": "dnswm.xxx.com"
+            },
+            "xxx.com: type NS, class IN, ns dnsws.xxx.com": {
+              "dns.resp.name": "xxx.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "8",
+              "dns.ns": "dnsws.xxx.com"
+            }
+          },
+          "Additional records": {
+            "dnswm.xxx.com: type A, class IN, addr 1.2.3.133": {
+              "dns.resp.name": "dnswm.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.133"
+            },
+            "dnsws.xxx.com: type A, class IN, addr 1.2.3.251": {
+              "dns.resp.name": "dnsws.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.251"
+            }
+          },
+          "dns.response_to": "1",
+          "dns.time": "0.000160101"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.468629589 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.468629589",
+          "frame.time_delta": "0.007981470",
+          "frame.time_delta_displayed": "0.007981470",
+          "frame.time_relative": "0.008141571",
+          "frame.number": "3",
+          "frame.len": "73",
+          "frame.cap_len": "73",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "59",
+          "ip.id": "0x0000fe19",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "124",
+          "ip.proto": "17",
+          "ip.checksum": "0x00004ace",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.209.157",
+          "ip.addr": "255.254.209.157",
+          "ip.src_host": "255.254.209.157",
+          "ip.host": "255.254.209.157",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "58902",
+          "udp.dstport": "53",
+          "udp.port": "58902",
+          "udp.port": "53",
+          "udp.length": "39",
+          "udp.checksum": "0x0000a278",
+          "udp.checksum.status": "2",
+          "udp.stream": "1"
+        },
+        "dns": {
+          "dns.id": "0x00004bfb",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name": "eod.xxx.com",
+              "dns.qry.name.len": "13",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.468662089 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.468662089",
+          "frame.time_delta": "0.000032500",
+          "frame.time_delta_displayed": "0.000032500",
+          "frame.time_relative": "0.008174071",
+          "frame.number": "4",
+          "frame.len": "161",
+          "frame.cap_len": "161",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "147",
+          "ip.id": "0x00000ed4",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000076bc",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.209.157",
+          "ip.addr": "255.254.209.157",
+          "ip.dst_host": "255.254.209.157",
+          "ip.host": "255.254.209.157"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "58902",
+          "udp.port": "53",
+          "udp.port": "58902",
+          "udp.length": "127",
+          "udp.checksum": "0x00008d78",
+          "udp.checksum.status": "2",
+          "udp.stream": "1"
+        },
+        "dns": {
+          "dns.id": "0x00004bfb",
+          "dns.flags": "0x00008580",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "1",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "1",
+          "dns.count.auth_rr": "2",
+          "dns.count.add_rr": "2",
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name": "eod.xxx.com",
+              "dns.qry.name.len": "13",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "eod.xxx.com: type A, class IN, addr 1.2.3.49": {
+              "dns.resp.name": "eod.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.49"
+            }
+          },
+          "Authoritative nameservers": {
+            "xxx.com: type NS, class IN, ns dnsws.xxx.com": {
+              "dns.resp.name": "xxx.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "8",
+              "dns.ns": "dnsws.xxx.com"
+            },
+            "xxx.com: type NS, class IN, ns dnswm.xxx.com": {
+              "dns.resp.name": "xxx.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "8",
+              "dns.ns": "dnswm.xxx.com"
+            }
+          },
+          "Additional records": {
+            "dnswm.xxx.com: type A, class IN, addr 1.2.3.133": {
+              "dns.resp.name": "dnswm.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.133"
+            },
+            "dnsws.xxx.com: type A, class IN, addr 1.2.3.251": {
+              "dns.resp.name": "dnsws.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.251"
+            }
+          },
+          "dns.response_to": "3",
+          "dns.time": "0.000032500"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.475176546 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.475176546",
+          "frame.time_delta": "0.006514457",
+          "frame.time_delta_displayed": "0.006514457",
+          "frame.time_relative": "0.014688528",
+          "frame.number": "5",
+          "frame.len": "73",
+          "frame.cap_len": "73",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "59",
+          "ip.id": "0x0000fe1a",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "124",
+          "ip.proto": "17",
+          "ip.checksum": "0x00004acd",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.209.157",
+          "ip.addr": "255.254.209.157",
+          "ip.src_host": "255.254.209.157",
+          "ip.host": "255.254.209.157",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "56538",
+          "udp.dstport": "53",
+          "udp.port": "56538",
+          "udp.port": "53",
+          "udp.length": "39",
+          "udp.checksum": "0x000087c7",
+          "udp.checksum.status": "2",
+          "udp.stream": "2"
+        },
+        "dns": {
+          "dns.id": "0x000054e8",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "eod.xxx.com: type AAAA, class IN": {
+              "dns.qry.name": "eod.xxx.com",
+              "dns.qry.name.len": "13",
+              "dns.count.labels": "4",
+              "dns.qry.type": "28",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.475213546 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.475213546",
+          "frame.time_delta": "0.000037000",
+          "frame.time_delta_displayed": "0.000037000",
+          "frame.time_relative": "0.014725528",
+          "frame.number": "6",
+          "frame.len": "122",
+          "frame.cap_len": "122",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "108",
+          "ip.id": "0x00000edb",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000076dc",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.209.157",
+          "ip.addr": "255.254.209.157",
+          "ip.dst_host": "255.254.209.157",
+          "ip.host": "255.254.209.157"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "56538",
+          "udp.port": "53",
+          "udp.port": "56538",
+          "udp.length": "88",
+          "udp.checksum": "0x0000ed93",
+          "udp.checksum.status": "2",
+          "udp.stream": "2"
+        },
+        "dns": {
+          "dns.id": "0x000054e8",
+          "dns.flags": "0x00008580",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "1",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "1",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "eod.xxx.com: type AAAA, class IN": {
+              "dns.qry.name": "eod.xxx.com",
+              "dns.qry.name.len": "13",
+              "dns.count.labels": "4",
+              "dns.qry.type": "28",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Authoritative nameservers": {
+            "xxx.com: type SOA, class IN, mname dnswm.xxx.com": {
+              "dns.resp.name": "xxx.com",
+              "dns.resp.type": "6",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "37",
+              "dns.soa.mname": "dnswm.xxx.com",
+              "dns.soa.rname": "rtecza.xxx.com",
+              "dns.soa.serial_number": "2020120400",
+              "dns.soa.refresh_interval": "1200",
+              "dns.soa.retry_interval": "900",
+              "dns.soa.expire_limit": "604800",
+              "dns.soa.mininum_ttl": "3600"
+            }
+          },
+          "dns.response_to": "5",
+          "dns.time": "0.000037000"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.537351687 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.537351687",
+          "frame.time_delta": "0.062138141",
+          "frame.time_delta_displayed": "0.062138141",
+          "frame.time_relative": "0.076863669",
+          "frame.number": "7",
+          "frame.len": "85",
+          "frame.cap_len": "85",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "71",
+          "ip.id": "0x00007fa2",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "123",
+          "ip.proto": "17",
+          "ip.checksum": "0x0000a21d",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.src_host": "255.254.249.185",
+          "ip.host": "255.254.249.185",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "51414",
+          "udp.dstport": "53",
+          "udp.port": "51414",
+          "udp.port": "53",
+          "udp.length": "51",
+          "udp.checksum": "0x0000fadf",
+          "udp.checksum.status": "2",
+          "udp.stream": "3"
+        },
+        "dns": {
+          "dns.id": "0x0000c145",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "tpc.googlesyndication.com: type A, class IN": {
+              "dns.qry.name": "tpc.googlesyndication.com",
+              "dns.qry.name.len": "25",
+              "dns.count.labels": "3",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.537822291 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.537822291",
+          "frame.time_delta": "0.000470604",
+          "frame.time_delta_displayed": "0.000470604",
+          "frame.time_relative": "0.077334273",
+          "frame.number": "8",
+          "frame.len": "356",
+          "frame.cap_len": "356",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "342",
+          "ip.id": "0x000029c0",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000032f1",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.dst_host": "255.254.249.185",
+          "ip.host": "255.254.249.185"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "51414",
+          "udp.port": "53",
+          "udp.port": "51414",
+          "udp.length": "322",
+          "udp.checksum": "0x0000dbf5",
+          "udp.checksum.status": "2",
+          "udp.stream": "3"
+        },
+        "dns": {
+          "dns.id": "0x0000c145",
+          "dns.flags": "0x00008180",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "1",
+          "dns.count.auth_rr": "4",
+          "dns.count.add_rr": "8",
+          "Queries": {
+            "tpc.googlesyndication.com: type A, class IN": {
+              "dns.qry.name": "tpc.googlesyndication.com",
+              "dns.qry.name.len": "25",
+              "dns.count.labels": "3",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "tpc.googlesyndication.com: type A, class IN, addr 142.250.75.1": {
+              "dns.resp.name": "tpc.googlesyndication.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "6",
+              "dns.resp.len": "4",
+              "dns.a": "142.250.75.1"
+            }
+          },
+          "Authoritative nameservers": {
+            "googlesyndication.com: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "13",
+              "dns.ns": "ns2.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns4.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns1.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns3.google.com"
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.34.10"
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.32.10"
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.36.10"
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.38.10"
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:34::a"
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:32::a"
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:36::a"
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:38::a"
+            }
+          },
+          "dns.response_to": "7",
+          "dns.time": "0.000470604"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.540553415 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.540553415",
+          "frame.time_delta": "0.002731124",
+          "frame.time_delta_displayed": "0.002731124",
+          "frame.time_relative": "0.080065397",
+          "frame.number": "9",
+          "frame.len": "85",
+          "frame.cap_len": "85",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "71",
+          "ip.id": "0x00007fa3",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "123",
+          "ip.proto": "17",
+          "ip.checksum": "0x0000a21c",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.src_host": "255.254.249.185",
+          "ip.host": "255.254.249.185",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "60728",
+          "udp.dstport": "53",
+          "udp.port": "60728",
+          "udp.port": "53",
+          "udp.length": "51",
+          "udp.checksum": "0x00007092",
+          "udp.checksum.status": "2",
+          "udp.stream": "4"
+        },
+        "dns": {
+          "dns.id": "0x00002731",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "tpc.googlesyndication.com: type A, class IN": {
+              "dns.qry.name": "tpc.googlesyndication.com",
+              "dns.qry.name.len": "25",
+              "dns.count.labels": "3",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.541103819 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.541103819",
+          "frame.time_delta": "0.000550404",
+          "frame.time_delta_displayed": "0.000550404",
+          "frame.time_relative": "0.080615801",
+          "frame.number": "10",
+          "frame.len": "356",
+          "frame.cap_len": "356",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "342",
+          "ip.id": "0x000029c3",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000032ee",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.dst_host": "255.254.249.185",
+          "ip.host": "255.254.249.185"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "60728",
+          "udp.port": "53",
+          "udp.port": "60728",
+          "udp.length": "322",
+          "udp.checksum": "0x00004faa",
+          "udp.checksum.status": "2",
+          "udp.stream": "4"
+        },
+        "dns": {
+          "dns.id": "0x00002731",
+          "dns.flags": "0x00008180",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "1",
+          "dns.count.auth_rr": "4",
+          "dns.count.add_rr": "8",
+          "Queries": {
+            "tpc.googlesyndication.com: type A, class IN": {
+              "dns.qry.name": "tpc.googlesyndication.com",
+              "dns.qry.name.len": "25",
+              "dns.count.labels": "3",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "tpc.googlesyndication.com: type A, class IN, addr 142.250.75.1": {
+              "dns.resp.name": "tpc.googlesyndication.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "6",
+              "dns.resp.len": "4",
+              "dns.a": "142.250.75.1"
+            }
+          },
+          "Authoritative nameservers": {
+            "googlesyndication.com: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "13",
+              "dns.ns": "ns4.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns3.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns1.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns2.google.com"
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.34.10"
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.32.10"
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.36.10"
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.38.10"
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:34::a"
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:32::a"
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:36::a"
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:38::a"
+            }
+          },
+          "dns.response_to": "9",
+          "dns.time": "0.000550404"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.543914344 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.543914344",
+          "frame.time_delta": "0.002810525",
+          "frame.time_delta_displayed": "0.002810525",
+          "frame.time_relative": "0.083426326",
+          "frame.number": "11",
+          "frame.len": "85",
+          "frame.cap_len": "85",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "71",
+          "ip.id": "0x00007fa4",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "123",
+          "ip.proto": "17",
+          "ip.checksum": "0x0000a21b",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.src_host": "255.254.249.185",
+          "ip.host": "255.254.249.185",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "58045",
+          "udp.dstport": "53",
+          "udp.port": "58045",
+          "udp.port": "53",
+          "udp.length": "51",
+          "udp.checksum": "0x00007102",
+          "udp.checksum.status": "2",
+          "udp.stream": "5"
+        },
+        "dns": {
+          "dns.id": "0x0000163c",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "tpc.googlesyndication.com: type AAAA, class IN": {
+              "dns.qry.name": "tpc.googlesyndication.com",
+              "dns.qry.name.len": "25",
+              "dns.count.labels": "3",
+              "dns.qry.type": "28",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.544136046 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.544136046",
+          "frame.time_delta": "0.000221702",
+          "frame.time_delta_displayed": "0.000221702",
+          "frame.time_relative": "0.083648028",
+          "frame.number": "12",
+          "frame.len": "368",
+          "frame.cap_len": "368",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "354",
+          "ip.id": "0x000029c4",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000032e1",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.dst_host": "255.254.249.185",
+          "ip.host": "255.254.249.185"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "58045",
+          "udp.port": "53",
+          "udp.port": "58045",
+          "udp.length": "334",
+          "udp.checksum": "0x00004baf",
+          "udp.checksum.status": "2",
+          "udp.stream": "5"
+        },
+        "dns": {
+          "dns.id": "0x0000163c",
+          "dns.flags": "0x00008180",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "1",
+          "dns.count.auth_rr": "4",
+          "dns.count.add_rr": "8",
+          "Queries": {
+            "tpc.googlesyndication.com: type AAAA, class IN": {
+              "dns.qry.name": "tpc.googlesyndication.com",
+              "dns.qry.name.len": "25",
+              "dns.count.labels": "3",
+              "dns.qry.type": "28",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "tpc.googlesyndication.com: type AAAA, class IN, addr 2a00:1450:401b:801::2001": {
+              "dns.resp.name": "tpc.googlesyndication.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "115",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2a00:1450:401b:801::2001"
+            }
+          },
+          "Authoritative nameservers": {
+            "googlesyndication.com: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "13",
+              "dns.ns": "ns2.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns3.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns4.google.com"
+            },
+            "googlesyndication.com: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name": "googlesyndication.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3970",
+              "dns.resp.len": "6",
+              "dns.ns": "ns1.google.com"
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.34.10"
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.32.10"
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.36.10"
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.38.10"
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:34::a"
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:32::a"
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:36::a"
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:38::a"
+            }
+          },
+          "dns.response_to": "11",
+          "dns.time": "0.000221702"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.555995249 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.555995249",
+          "frame.time_delta": "0.011859203",
+          "frame.time_delta_displayed": "0.011859203",
+          "frame.time_relative": "0.095507231",
+          "frame.number": "13",
+          "frame.len": "90",
+          "frame.cap_len": "90",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "76",
+          "ip.id": "0x00007fa5",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "123",
+          "ip.proto": "17",
+          "ip.checksum": "0x0000a215",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.src_host": "255.254.249.185",
+          "ip.host": "255.254.249.185",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "56887",
+          "udp.dstport": "53",
+          "udp.port": "56887",
+          "udp.port": "53",
+          "udp.length": "56",
+          "udp.checksum": "0x00008f45",
+          "udp.checksum.status": "2",
+          "udp.stream": "6"
+        },
+        "dns": {
+          "dns.id": "0x000014e5",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "securepubads.g.doubleclick.net: type A, class IN": {
+              "dns.qry.name": "securepubads.g.doubleclick.net",
+              "dns.qry.name.len": "30",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.556238651 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.556238651",
+          "frame.time_delta": "0.000243402",
+          "frame.time_delta_displayed": "0.000243402",
+          "frame.time_relative": "0.095750633",
+          "frame.number": "14",
+          "frame.len": "390",
+          "frame.cap_len": "390",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "376",
+          "ip.id": "0x000029cf",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000032c0",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.dst_host": "255.254.249.185",
+          "ip.host": "255.254.249.185"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "56887",
+          "udp.port": "53",
+          "udp.port": "56887",
+          "udp.length": "356",
+          "udp.checksum": "0x0000d45d",
+          "udp.checksum.status": "2",
+          "udp.stream": "6"
+        },
+        "dns": {
+          "dns.id": "0x000014e5",
+          "dns.flags": "0x00008180",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "2",
+          "dns.count.auth_rr": "4",
+          "dns.count.add_rr": "8",
+          "Queries": {
+            "securepubads.g.doubleclick.net: type A, class IN": {
+              "dns.qry.name": "securepubads.g.doubleclick.net",
+              "dns.qry.name.len": "30",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "securepubads.g.doubleclick.net: type CNAME, class IN, cname partnerad.l.doubleclick.net": {
+              "dns.resp.name": "securepubads.g.doubleclick.net",
+              "dns.resp.type": "5",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "4302",
+              "dns.resp.len": "14",
+              "dns.cname": "partnerad.l.doubleclick.net"
+            },
+            "partnerad.l.doubleclick.net: type A, class IN, addr 216.58.208.194": {
+              "dns.resp.name": "partnerad.l.doubleclick.net",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "190",
+              "dns.resp.len": "4",
+              "dns.a": "216.58.208.194"
+            }
+          },
+          "Authoritative nameservers": {
+            "doubleclick.net: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name": "doubleclick.net",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3577",
+              "dns.resp.len": "16",
+              "dns.ns": "ns3.google.com"
+            },
+            "doubleclick.net: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name": "doubleclick.net",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3577",
+              "dns.resp.len": "6",
+              "dns.ns": "ns4.google.com"
+            },
+            "doubleclick.net: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name": "doubleclick.net",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3577",
+              "dns.resp.len": "6",
+              "dns.ns": "ns2.google.com"
+            },
+            "doubleclick.net: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name": "doubleclick.net",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3577",
+              "dns.resp.len": "6",
+              "dns.ns": "ns1.google.com"
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.34.10"
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.32.10"
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.36.10"
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.38.10"
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:34::a"
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:32::a"
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:36::a"
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:38::a"
+            }
+          },
+          "dns.response_to": "13",
+          "dns.time": "0.000243402"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.560859091 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.560859091",
+          "frame.time_delta": "0.004620440",
+          "frame.time_delta_displayed": "0.004620440",
+          "frame.time_relative": "0.100371073",
+          "frame.number": "15",
+          "frame.len": "87",
+          "frame.cap_len": "87",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "73",
+          "ip.id": "0x00007fa6",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "123",
+          "ip.proto": "17",
+          "ip.checksum": "0x0000a217",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.src_host": "255.254.249.185",
+          "ip.host": "255.254.249.185",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "49266",
+          "udp.dstport": "53",
+          "udp.port": "49266",
+          "udp.port": "53",
+          "udp.length": "53",
+          "udp.checksum": "0x00009aa2",
+          "udp.checksum.status": "2",
+          "udp.stream": "7"
+        },
+        "dns": {
+          "dns.id": "0x0000605e",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "partnerad.l.doubleclick.net: type A, class IN": {
+              "dns.qry.name": "partnerad.l.doubleclick.net",
+              "dns.qry.name.len": "27",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.560959692 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.560959692",
+          "frame.time_delta": "0.000100601",
+          "frame.time_delta_displayed": "0.000100601",
+          "frame.time_relative": "0.100471674",
+          "frame.number": "16",
+          "frame.len": "361",
+          "frame.cap_len": "361",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "347",
+          "ip.id": "0x000029d2",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000032da",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.dst_host": "255.254.249.185",
+          "ip.host": "255.254.249.185"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "49266",
+          "udp.port": "53",
+          "udp.port": "49266",
+          "udp.length": "327",
+          "udp.checksum": "0x00002ff3",
+          "udp.checksum.status": "2",
+          "udp.stream": "7"
+        },
+        "dns": {
+          "dns.id": "0x0000605e",
+          "dns.flags": "0x00008180",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "1",
+          "dns.count.auth_rr": "4",
+          "dns.count.add_rr": "8",
+          "Queries": {
+            "partnerad.l.doubleclick.net: type A, class IN": {
+              "dns.qry.name": "partnerad.l.doubleclick.net",
+              "dns.qry.name.len": "27",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "partnerad.l.doubleclick.net: type A, class IN, addr 216.58.208.194": {
+              "dns.resp.name": "partnerad.l.doubleclick.net",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "190",
+              "dns.resp.len": "4",
+              "dns.a": "216.58.208.194"
+            }
+          },
+          "Authoritative nameservers": {
+            "doubleclick.net: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name": "doubleclick.net",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3577",
+              "dns.resp.len": "16",
+              "dns.ns": "ns3.google.com"
+            },
+            "doubleclick.net: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name": "doubleclick.net",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3577",
+              "dns.resp.len": "6",
+              "dns.ns": "ns1.google.com"
+            },
+            "doubleclick.net: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name": "doubleclick.net",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3577",
+              "dns.resp.len": "6",
+              "dns.ns": "ns4.google.com"
+            },
+            "doubleclick.net: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name": "doubleclick.net",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3577",
+              "dns.resp.len": "6",
+              "dns.ns": "ns2.google.com"
+            }
+          },
+          "Additional records": {
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.34.10"
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.32.10"
+            },
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.36.10"
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.38.10"
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:34::a"
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:32::a"
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:36::a"
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:38::a"
+            }
+          },
+          "dns.response_to": "15",
+          "dns.time": "0.000100601"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.562936909 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.562936909",
+          "frame.time_delta": "0.001977217",
+          "frame.time_delta_displayed": "0.001977217",
+          "frame.time_relative": "0.102448891",
+          "frame.number": "17",
+          "frame.len": "87",
+          "frame.cap_len": "87",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "73",
+          "ip.id": "0x00007fa7",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "123",
+          "ip.proto": "17",
+          "ip.checksum": "0x0000a216",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.src_host": "255.254.249.185",
+          "ip.host": "255.254.249.185",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "50477",
+          "udp.dstport": "53",
+          "udp.port": "50477",
+          "udp.port": "53",
+          "udp.length": "53",
+          "udp.checksum": "0x00006150",
+          "udp.checksum.status": "2",
+          "udp.stream": "8"
+        },
+        "dns": {
+          "dns.id": "0x000079f5",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "partnerad.l.doubleclick.net: type AAAA, class IN": {
+              "dns.qry.name": "partnerad.l.doubleclick.net",
+              "dns.qry.name.len": "27",
+              "dns.count.labels": "4",
+              "dns.qry.type": "28",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.563502314 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.563502314",
+          "frame.time_delta": "0.000565405",
+          "frame.time_delta_displayed": "0.000565405",
+          "frame.time_relative": "0.103014296",
+          "frame.number": "18",
+          "frame.len": "147",
+          "frame.cap_len": "147",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "133",
+          "ip.id": "0x000029d3",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000033af",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.249.185",
+          "ip.addr": "255.254.249.185",
+          "ip.dst_host": "255.254.249.185",
+          "ip.host": "255.254.249.185"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "50477",
+          "udp.port": "53",
+          "udp.port": "50477",
+          "udp.length": "113",
+          "udp.checksum": "0x0000dcd3",
+          "udp.checksum.status": "2",
+          "udp.stream": "8"
+        },
+        "dns": {
+          "dns.id": "0x000079f5",
+          "dns.flags": "0x00008180",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "1",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "partnerad.l.doubleclick.net: type AAAA, class IN": {
+              "dns.qry.name": "partnerad.l.doubleclick.net",
+              "dns.qry.name.len": "27",
+              "dns.count.labels": "4",
+              "dns.qry.type": "28",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Authoritative nameservers": {
+            "l.doubleclick.net: type SOA, class IN, mname ns1.google.com": {
+              "dns.resp.name": "l.doubleclick.net",
+              "dns.resp.type": "6",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "41",
+              "dns.resp.len": "48",
+              "dns.soa.mname": "ns1.google.com",
+              "dns.soa.rname": "dns-admin.google.com",
+              "dns.soa.serial_number": "346284789",
+              "dns.soa.refresh_interval": "900",
+              "dns.soa.retry_interval": "900",
+              "dns.soa.expire_limit": "1800",
+              "dns.soa.mininum_ttl": "60"
+            }
+          },
+          "dns.response_to": "17",
+          "dns.time": "0.000565405"
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.686388984 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.686388984",
+          "frame.time_delta": "0.122886670",
+          "frame.time_delta_displayed": "0.122886670",
+          "frame.time_relative": "0.225900966",
+          "frame.number": "19",
+          "frame.len": "85",
+          "frame.cap_len": "85",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "71",
+          "ip.id": "0x0000edf9",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "124",
+          "ip.proto": "17",
+          "ip.checksum": "0x000026f1",
+          "ip.checksum.status": "2",
+          "ip.src": "255.255.5.142",
+          "ip.addr": "255.255.5.142",
+          "ip.src_host": "255.255.5.142",
+          "ip.host": "255.255.5.142",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "49587",
+          "udp.dstport": "53",
+          "udp.port": "49587",
+          "udp.port": "53",
+          "udp.length": "51",
+          "udp.checksum": "0x0000b0d8",
+          "udp.checksum.status": "2",
+          "udp.stream": "9"
+        },
+        "dns": {
+          "dns.id": "0x0000fbce",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "lh5.googleusercontent.com: type A, class IN": {
+              "dns.qry.name": "lh5.googleusercontent.com",
+              "dns.qry.name.len": "25",
+              "dns.count.labels": "3",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-16",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.686991889 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.686991889",
+          "frame.time_delta": "0.000602905",
+          "frame.time_delta_displayed": "0.000602905",
+          "frame.time_relative": "0.226503871",
+          "frame.number": "20",
+          "frame.len": "385",
+          "frame.cap_len": "385",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "371",
+          "ip.id": "0x00007662",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x0000da5c",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.255.5.142",
+          "ip.addr": "255.255.5.142",
+          "ip.dst_host": "255.255.5.142",
+          "ip.host": "255.255.5.142"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "49587",
+          "udp.port": "53",
+          "udp.port": "49587",
+          "udp.length": "351",
+          "udp.checksum": "0x00000810",
+          "udp.checksum.status": "2",
+          "udp.stream": "9"
+        },
+        "dns": {
+          "dns.id": "0x0000fbce",
+          "dns.flags": "0x00008180",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "2",
+          "dns.count.auth_rr": "4",
+          "dns.count.add_rr": "8",
+          "Queries": {
+            "lh5.googleusercontent.com: type A, class IN": {
+              "dns.qry.name": "lh5.googleusercontent.com",
+              "dns.qry.name.len": "25",
+              "dns.count.labels": "3",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "lh5.googleusercontent.com: type CNAME, class IN, cname googlehosted.l.googleusercontent.com": {
+              "dns.resp.name": "lh5.googleusercontent.com",
+              "dns.resp.type": "5",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "8329",
+              "dns.resp.len": "17",
+              "dns.cname": "googlehosted.l.googleusercontent.com"
+            },
+            "googlehosted.l.googleusercontent.com: type A, class IN, addr 172.217.20.193": {
+              "dns.resp.name": "googlehosted.l.googleusercontent.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "253",
+              "dns.resp.len": "4",
+              "dns.a": "172.217.20.193"
+            }
+          },
+          "Authoritative nameservers": {
+            "googleusercontent.com: type NS, class IN, ns ns2.google.com": {
+              "dns.resp.name": "googleusercontent.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3612",
+              "dns.resp.len": "13",
+              "dns.ns": "ns2.google.com"
+            },
+            "googleusercontent.com: type NS, class IN, ns ns3.google.com": {
+              "dns.resp.name": "googleusercontent.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3612",
+              "dns.resp.len": "6",
+              "dns.ns": "ns3.google.com"
+            },
+            "googleusercontent.com: type NS, class IN, ns ns1.google.com": {
+              "dns.resp.name": "googleusercontent.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3612",
+              "dns.resp.len": "6",
+              "dns.ns": "ns1.google.com"
+            },
+            "googleusercontent.com: type NS, class IN, ns ns4.google.com": {
+              "dns.resp.name": "googleusercontent.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3612",
+              "dns.resp.len": "6",
+              "dns.ns": "ns4.google.com"
+            }
+          },
+          "Additional records": {
+            "ns3.google.com: type A, class IN, addr 216.239.36.10": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.36.10"
+            },
+            "ns2.google.com: type A, class IN, addr 216.239.34.10": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.34.10"
+            },
+            "ns4.google.com: type A, class IN, addr 216.239.38.10": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.38.10"
+            },
+            "ns1.google.com: type A, class IN, addr 216.239.32.10": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "4",
+              "dns.a": "216.239.32.10"
+            },
+            "ns3.google.com: type AAAA, class IN, addr 2001:4860:4802:36::a": {
+              "dns.resp.name": "ns3.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:36::a"
+            },
+            "ns2.google.com: type AAAA, class IN, addr 2001:4860:4802:34::a": {
+              "dns.resp.name": "ns2.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:34::a"
+            },
+            "ns4.google.com: type AAAA, class IN, addr 2001:4860:4802:38::a": {
+              "dns.resp.name": "ns4.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:38::a"
+            },
+            "ns1.google.com: type AAAA, class IN, addr 2001:4860:4802:32::a": {
+              "dns.resp.name": "ns1.google.com",
+              "dns.resp.type": "28",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3804",
+              "dns.resp.len": "16",
+              "dns.aaaa": "2001:4860:4802:32::a"
+            }
+          },
+          "dns.response_to": "19",
+          "dns.time": "0.000602905"
+        }
+      }
+    }
+  }
+]

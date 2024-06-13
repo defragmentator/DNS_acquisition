@@ -1,0 +1,30 @@
+[db]
+db_name: test3
+topic_in: abc
+topic_out: abc2
+
+[fields]
+fields: [('Response_Answers.dns_a', 'Nullable(IPv4)'), ('Response_Additional_records.dns_a', 'Nullable(IPv4)')]
+
+destination_fields: [('as_country_code', 'Nullable(String)'),
+    ('as_description', 'Nullable(String)'),
+    ('as_number', 'Nullable(UInt32)'),
+    ('country', 'Nullable(String)'),
+    ('latitude', 'Nullable(Float)'),
+    ('longitude', 'Nullable(Float)'),
+    ('timezone', 'Nullable(String)'),
+    ('baracuda_response_code', 'Nullable(UInt8)'),
+    ('spamhaus_response_code', 'Nullable(UInt8)'),
+    ('sorbs_response_code', 'Nullable(UInt8)')
+    ]
+
+first_api_fields: ['as_country_code', 'as_description', 'as_number']
+second_api_fields: ['country', 'latitude', 'longitude', 'timezone']
+
+[udp]
+max_timeout: 10
+
+[kafka]
+no_partitions: 2
+no_workers: 2
+no_threads: 2

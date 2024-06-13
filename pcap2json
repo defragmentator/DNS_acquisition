@@ -1,0 +1,7 @@
+#!/bin/bash
+source check_params
+
+#mozna dodać np. -c 50 aby wybrać tylko 50 pierwszych pakietów, aby dla testów krótko trwało
+
+tshark -r $1 -N ndN -T json  -J 'frame ip udp dns'  -l > data/$(basename $1).json
+

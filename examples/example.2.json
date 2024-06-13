@@ -1,0 +1,249 @@
+[
+  {
+    "_index": "packets-2020-12-21",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.460488018 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.460488018",
+          "frame.time_delta": "0.000000000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "0.000000000",
+          "frame.number": "1",
+          "frame.len": "73",
+          "frame.cap_len": "73",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "59",
+          "ip.id": "0x0000fe18",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "124",
+          "ip.proto": "17",
+          "ip.checksum": "0x00004acf",
+          "ip.checksum.status": "2",
+          "ip.src": "255.254.209.157",
+          "ip.addr": "255.254.209.157",
+          "ip.src_host": "255.254.209.157",
+          "ip.host": "255.254.209.157",
+          "ip.dst": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.dst_host": "1.2.3.133",
+          "ip.host": "1.2.3.133"
+        },
+        "udp": {
+          "udp.srcport": "56657",
+          "udp.dstport": "53",
+          "udp.port": "56657",
+          "udp.port": "53",
+          "udp.length": "39",
+          "udp.checksum": "0x000021e6",
+          "udp.checksum.status": "2",
+          "udp.stream": "0"
+        },
+        "dns": {
+          "dns.id": "0x0000d552",
+          "dns.flags": "0x00000100",
+          "dns.flags_tree": {
+            "dns.flags.response": "0",
+            "dns.flags.opcode": "0",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.z": "0",
+            "dns.flags.checkdisable": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "0",
+          "dns.count.auth_rr": "0",
+          "dns.count.add_rr": "0",
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name": "eod.xxx.com",
+              "dns.qry.name.len": "13",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ,
+  {
+    "_index": "packets-2020-12-21",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "DNS"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Dec 10, 2020 11:30:49.460648119 CET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1607596249.460648119",
+          "frame.time_delta": "0.000160101",
+          "frame.time_delta_displayed": "0.000160101",
+          "frame.time_relative": "0.000160101",
+          "frame.number": "2",
+          "frame.len": "161",
+          "frame.cap_len": "161",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:dns"
+        },
+        "eth": {
+          "filtered": "eth"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "147",
+          "ip.id": "0x00000ed1",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0",
+            "ip.frag_offset": "0"
+          },
+          "ip.ttl": "63",
+          "ip.proto": "17",
+          "ip.checksum": "0x000076bf",
+          "ip.checksum.status": "2",
+          "ip.src": "1.2.3.133",
+          "ip.addr": "1.2.3.133",
+          "ip.src_host": "1.2.3.133",
+          "ip.host": "1.2.3.133",
+          "ip.dst": "255.254.209.157",
+          "ip.addr": "255.254.209.157",
+          "ip.dst_host": "255.254.209.157",
+          "ip.host": "255.254.209.157"
+        },
+        "udp": {
+          "udp.srcport": "53",
+          "udp.dstport": "56657",
+          "udp.port": "53",
+          "udp.port": "56657",
+          "udp.length": "127",
+          "udp.checksum": "0x00000ce6",
+          "udp.checksum.status": "2",
+          "udp.stream": "0"
+        },
+        "dns": {
+          "dns.id": "0x0000d552",
+          "dns.flags": "0x00008580",
+          "dns.flags_tree": {
+            "dns.flags.response": "1",
+            "dns.flags.opcode": "0",
+            "dns.flags.authoritative": "1",
+            "dns.flags.truncated": "0",
+            "dns.flags.recdesired": "1",
+            "dns.flags.recavail": "1",
+            "dns.flags.z": "0",
+            "dns.flags.authenticated": "0",
+            "dns.flags.checkdisable": "0",
+            "dns.flags.rcode": "0"
+          },
+          "dns.count.queries": "1",
+          "dns.count.answers": "1",
+          "dns.count.auth_rr": "2",
+          "dns.count.add_rr": "2",
+          "Queries": {
+            "eod.xxx.com: type A, class IN": {
+              "dns.qry.name": "eod.xxx.com",
+              "dns.qry.name.len": "13",
+              "dns.count.labels": "4",
+              "dns.qry.type": "1",
+              "dns.qry.class": "0x00000001"
+            }
+          },
+          "Answers": {
+            "eod.xxx.com: type A, class IN, addr 1.2.3.49": {
+              "dns.resp.name": "eod.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.49"
+            }
+          },
+          "Authoritative nameservers": {
+            "xxx.com: type NS, class IN, ns dnswm.xxx.com": {
+              "dns.resp.name": "xxx.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "8",
+              "dns.ns": "dnswm.xxx.com"
+            },
+            "xxx.com: type NS, class IN, ns dnsws.xxx.com": {
+              "dns.resp.name": "xxx.com",
+              "dns.resp.type": "2",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "8",
+              "dns.ns": "dnsws.xxx.com"
+            }
+          },
+          "Additional records": {
+            "dnswm.xxx.com: type A, class IN, addr 1.2.3.133": {
+              "dns.resp.name": "dnswm.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.133"
+            },
+            "dnsws.xxx.com: type A, class IN, addr 1.2.3.251": {
+              "dns.resp.name": "dnsws.xxx.com",
+              "dns.resp.type": "1",
+              "dns.resp.class": "0x00000001",
+              "dns.resp.ttl": "3600",
+              "dns.resp.len": "4",
+              "dns.a": "1.2.3.251"
+            }
+          },
+          "dns.response_to": "1",
+          "dns.time": "0.000160101"
+        }
+      }
+    }
+  }
+
+]

@@ -1,0 +1,5 @@
+#!/bin/bash
+source check_params
+
+./pcap2json $1
+./json2db_multiproc data/$(basename $1).json

@@ -1,0 +1,9 @@
+#!/bin/bash
+source check_params
+
+#adds unknow columns to nested cols for debuging (except Queries - here always enabled)
+#ADD_UNKNOWN_COLS="add? | keys[] ,"
+
+source filter
+
+cat $1 | ./jq ".[] | $FILTER" -c > data/$(basename $1).ndjsonf

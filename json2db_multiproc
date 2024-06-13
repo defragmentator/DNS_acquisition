@@ -1,0 +1,19 @@
+#!/bin/bash
+source check_params
+
+RECORDS_PER_PROCESS=10000
+
+#adds unknow columns to nested cols for debuging (except Queries - here always enabled)
+#ADD_UNKNOWN_COLS="add? | keys[] ,"
+
+source filter
+
+cat $1| jq -c '.[]' | split -l $RECORDS_PER_PROCESS  - data/$(basename $1).ndjson.
+
+for filename in data/$(basename $1).ndjson.*; do
+    echo $filename    
+    cat $filename | ./jq "$FILTER" -c > $filename.ndjsonf && ./ndjsonf2db $filename.ndjsonf &
+done
+wait
+rm data/$(basename $1).*
+
